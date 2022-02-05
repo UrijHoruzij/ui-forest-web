@@ -1,38 +1,66 @@
 {
-  "name": "stalin",
+  "name": "ui-forest",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
+    "normalize.css": "^8.0.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "styled-components": "^5.3.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build": "npm run rm && cross-env NODE_ENV=production babel src/components --out-dir dist && copyfiles --flat src/components/**/*.woff2 dist/Fonts",
+    "rm": "rimraf ./dist",
+    "storybook": "start-storybook -p 6006 -s public --no-manager-cache",
+    "build-storybook": "build-storybook -o docs-build"
   },
+  "author": "Urij Horuzij",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@storybook/addon-actions": "^6.3.7",
+    "@storybook/addon-essentials": "^6.3.7",
+    "@storybook/addon-links": "^6.3.7",
+    "@storybook/node-logger": "^6.3.7",
+    "@storybook/preset-create-react-app": "^3.2.0",
+    "@storybook/react": "^6.3.7",
+    "@storybook/theming": "^6.3.6",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.3",
+    "jest-styled-components": "^7.0.8",
+    "prettier": "^2.5.1",
+    "react-test-renderer": "^17.0.2",
+    "rimraf": "^3.0.2",
+    "storybook-addon-styled-component-theme": "^2.0.0",
+    "storybook-color-picker": "^2.3.0"
   }
 }
