@@ -1,0 +1,98 @@
+.wrapper {
+	position: relative;
+	display: inline-block;
+}
+.wrapper__small {
+	width: var(--avatar-size-small);
+	height: var(--avatar-size-small);
+}
+.wrapper__medium {
+	width: var(--avatar-size-medium);
+	height: var(--avatar-size-medium);
+}
+.wrapper__large {
+	width: var(--avatar-size-large);
+	height: var(--avatar-size-large);
+}
+.image {
+	border-radius: 50%;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 5;
+}
+.image__small {
+	max-width: var(--avatar-size-small);
+	max-height: var(--avatar-size-small);
+}
+.image__medium {
+	max-width: var(--avatar-size-medium);
+	max-height: var(--avatar-size-medium);
+}
+.image__large {
+	max-width: var(--avatar-size-large);
+	max-height: var(--avatar-size-large);
+}
+.symbol {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-family: var(--avatar-font-family);
+	font-weight: var(--avatar-font-weight);
+	color: var(--avatar-color-text);
+}
+.symbol__small {
+	font-size: var(--avatar-symbol-small);
+}
+.symbol__medium {
+	font-size: var(--avatar-symbol-medium);
+}
+.symbol__large {
+	font-size: var(--avatar-symbol-large);
+}
+
+.checkOnline {
+	position: absolute;
+	top: 90%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	background-color: var(--avatar-color-check-online-background);
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.checkOnline::before {
+	content: '';
+	display: block;
+	border-radius: 50%;
+	background-color: var(--avatar-color-check-online);
+	z-index: 15;
+}
+.checkOnline__small {
+	width: var(--avatar-check-online-background-small);
+	height: var(--avatar-check-online-background-small);
+}
+.checkOnline__small::before {
+	width: var(--avatar-check-online-small);
+	height: var(--avatar-check-online-small);
+}
+.checkOnline__medium {
+	width: var(--avatar-check-online-background-medium);
+	height: var(--avatar-check-online-background-medium);
+}
+.checkOnline__medium::before {
+	width: var(--avatar-check-online-medium);
+	height: var(--avatar-check-online-medium);
+}
+.checkOnline__large {
+	width: var(--avatar-check-online-background-large);
+	height: var(--avatar-check-online-background-large);
+}
+.checkOnline__large::before {
+	width: var(--avatar-check-online-large);
+	height: var(--avatar-check-online-large);
+}
