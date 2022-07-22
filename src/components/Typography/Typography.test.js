@@ -1,8 +1,6 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import "jest-styled-components";
-import { Typography } from "../";
-import ThemeProvider from "../../ThemeProvide";
+import { Typography, ThemeProvider } from "../";
 
 describe("Typography component", () => {
   test("Render typography", () => {

@@ -10,16 +10,13 @@
             "presets": [
                 "@babel/preset-env",
                 "@babel/preset-react"
-            ],
-            "plugins": [
-                [
-                    "transform-rename-import",
-                    {
-                        "original": "^(.+?)\\.scss$",
-                        "replacement": "$1.css"
-                    }
-                ]
             ]
         }
-    } 
+    },
+    "ignore": [
+        "**/__tests__",
+        "**/*.test.js",
+        "**/*.stories.js",
+        "**/*.stories.jsx"
+    ]
 }

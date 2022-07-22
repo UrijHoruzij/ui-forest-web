@@ -1,34 +1,27 @@
-import { withThemesProvider } from "storybook-addon-styled-component-theme";
-import { ThemeProvider } from "styled-components";
-import theme from "../src/components/Theme/theme";
-import { colors, GlobalStyle } from "../src/components";
-const themes = [theme];
+import light from "../src/components/ThemeProvider/themes/light.module.css";
+import dark from "../src/components/ThemeProvider/themes/dark.module.css";
 
 export const decorators = [
-  withThemesProvider(themes, ThemeProvider),
   (Story) => (
     <>
-      <GlobalStyle />
+      {/* <GlobalStyle /> */}
       <Story />
     </>
   ),
 ];
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
+  themes: {
+    default: "light",
+    list: [
+      { name: "light", class: [light.root], color: "#f5f5f5" },
+      { name: "dark", class: [dark.root], color: "#333333" },
+    ],
+  },
   controls: {
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/,
     },
-  },
-  colorPicker: {
-    disableDefaultPalettes: true,
-    primaryPalette: "Light",
-    palettes: [
-      {
-        name: "Light",
-        palette: colors,
-      },
-    ],
   },
 };

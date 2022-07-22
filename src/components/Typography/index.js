@@ -1,135 +1,109 @@
 import React from "react";
 import PropTypes from "prop-types";
-import styled, { css } from "styled-components";
+import classNames from "classnames";
+import styles from "./Typography.module.css";
 
-const changeStyle = (props) => {
-  switch (props.fontStyle) {
+const changeStyle = (fontStyle) => {
+  switch (fontStyle) {
     case "normal":
-      return "normal";
+      return styles.normal;
     case "italic":
-      return "italic";
+      return styles.italic;
     case "oblique":
-      return "oblique";
+      return styles.oblique;
     default:
-      return "normal";
+      return styles.normal;
   }
 };
-const changeColor = (props) => {
-  switch (props.color) {
+const changeColor = (color) => {
+  switch (color) {
     case "accent":
-      return props.theme.components.typography.colors.accent;
+      return styles.accent;
     case "secondary":
-      return props.theme.components.typography.colors.secondary;
+      return styles.secondary;
     case "text":
-      return props.theme.components.typography.colors.text;
+      return styles.text;
     default:
-      return props.color;
+      return;
   }
 };
 const changeTransform = (transform) => {
   switch (transform) {
     case "capitalize":
-      return "capitalize";
+      return styles.capitalize;
     case "lowercase":
-      return "lowercase";
+      return styles.lowercase;
     case "uppercase":
-      return "uppercase";
+      return styles.uppercase;
     default:
-      return "none";
+      return;
   }
 };
 const changeDecoration = (decoration) => {
   switch (decoration) {
     case "overline":
-      return "overline";
+      return styles.overline;
     case "underline":
-      return "underline";
+      return styles.underline;
     case "line-through":
-      return "line-through";
+      return styles.lineThrough;
     default:
-      return "none";
+      return;
   }
 };
-const Wrapper = styled.div`
-  font-family: ${(props) =>
-    props.theme.components.typography.fontFamilyHeading ||
-    props.theme.fontFamily};
-  border: none;
-  outline: none;
-  font-weight: ${(props) =>
-    props.theme.components.typography.fontWeightHeading ||
-    props.theme.fontWeight};
-  font-style: ${(props) => changeStyle(props)};
-  color: ${(props) => changeColor(props)};
-  text-transform: ${(props) => changeTransform(props.transform)};
-  text-decoration: ${(props) => changeDecoration(props.decoration)};
-  ${(props) =>
-    props.margin
-      ? css`
-          margin: 0;
-        `
-      : null}
-`;
-const H1 = styled(Wrapper)`
-  font-size: ${(props) => props.theme.components.typography.type.h1.size};
-  line-height: ${(props) => props.theme.components.typography.type.h1.height};
-`;
-const H2 = styled(Wrapper)`
-  font-size: ${(props) => props.theme.components.typography.type.h2.size};
-  line-height: ${(props) => props.theme.components.typography.type.h2.height};
-`;
-const H3 = styled(Wrapper)`
-  font-size: ${(props) => props.theme.components.typography.type.h3.size};
-  line-height: ${(props) => props.theme.components.typography.type.h3.height};
-`;
-const H4 = styled(Wrapper)`
-  font-size: ${(props) => props.theme.components.typography.type.h4.size};
-  line-height: ${(props) => props.theme.components.typography.type.h4.height};
-`;
-const H5 = styled(Wrapper)`
-  font-size: ${(props) => props.theme.components.typography.type.h5.size};
-  line-height: ${(props) => props.theme.components.typography.type.h5.height};
-`;
-const H6 = styled(Wrapper)`
-  font-size: ${(props) => props.theme.components.typography.type.h6.size};
-  line-height: ${(props) => props.theme.components.typography.type.h6.height};
-`;
-const P = styled(Wrapper)`
-  font-family: ${(props) =>
-    props.theme.components.typography.fontFamilyBody || props.theme.fontFamily};
-  font-weight: ${(props) =>
-    props.theme.components.typography.fontWeightBody || props.theme.fontWeight};
-  font-size: ${(props) => props.theme.components.typography.type.p.size};
-  line-height: ${(props) => props.theme.components.typography.type.p.height};
-`;
-const Caption = styled(Wrapper)`
-  font-family: ${(props) =>
-    props.theme.components.typography.fontFamilyBody || props.theme.fontFamily};
-  font-size: ${(props) => props.theme.components.typography.type.caption.size};
-  line-height: ${(props) =>
-    props.theme.components.typography.type.caption.height};
-  font-style: italic;
-`;
+const changeType = (type) => {
+  switch (type) {
+    case "h1":
+      return styles.h1;
+    case "h2":
+      return styles.h2;
+    case "h3":
+      return styles.h3;
+    case "h4":
+      return styles.h4;
+    case "h5":
+      return styles.h5;
+    case "h6":
+      return styles.h6;
+    case "text":
+      return styles.p;
+    case "caption":
+      return styles.caption;
+    default:
+      return styles.p;
+  }
+};
 const Typography = (props) => {
+  const changeClassName = (props) => {
+    return classNames(
+      props.className,
+      changeType(props.type),
+      changeStyle(props.fontStyle),
+      changeColor(props.color),
+      changeTransform(props.transform),
+      changeDecoration(props.decoration)
+    );
+  };
+
   switch (props.type) {
     case "h1":
-      return <H1 as="h1" {...props} />;
+      return <h1 className={changeClassName(props)} {...props} />;
     case "h2":
-      return <H2 as="h2" {...props} />;
+      return <h2 className={changeClassName(props)} {...props} />;
     case "h3":
-      return <H3 as="h3" {...props} />;
+      return <h3 className={changeClassName(props)} {...props} />;
     case "h4":
-      return <H4 as="h4" {...props} />;
+      return <h4 className={changeClassName(props)} {...props} />;
     case "h5":
-      return <H5 as="h5" {...props} />;
+      return <h5 className={changeClassName(props)} {...props} />;
     case "h6":
-      return <H6 as="h6" {...props} />;
+      return <h6 className={changeClassName(props)} {...props} />;
     case "text":
-      return <P as="p" {...props} />;
+      return <p className={changeClassName(props)} {...props} />;
     case "caption":
-      return <Caption as="figcaption" {...props} />;
+      return <figcaption className={changeClassName(props)} {...props} />;
     default:
-      return <P as="p" {...props} />;
+      return <p className={changeClassName(props)} {...props} />;
   }
 };
 
@@ -144,17 +118,13 @@ Typography.propTypes = {
     "caption",
     "text",
   ]),
-  color: PropTypes.oneOfType([
-    PropTypes.oneOf(["accent", "text", "secondary"]),
-    PropTypes.string,
-  ]),
+  color: PropTypes.oneOf(["accent", "text", "secondary"]),
   children: PropTypes.node,
   fontStyle: PropTypes.oneOf(["normal", "italic", "oblique"]),
   transform: PropTypes.oneOf(["capitalize", "lowercase", "uppercase"]),
   decoration: PropTypes.oneOf(["underline", "overline", "line-through"]),
   className: PropTypes.string,
   style: PropTypes.object,
-  margin: PropTypes.bool,
 };
 
 Typography.defaultProps = {
