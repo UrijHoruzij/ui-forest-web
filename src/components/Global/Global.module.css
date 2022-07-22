@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'PT Astra Sans';
+	src: url('./Fonts/PT-Astra-Sans_Bold-Italic.woff2') format('woff2');
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'PT Astra Sans';
+	src: url('./Fonts/PT-Astra-Sans_Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'PT Astra Sans';
+	src: url('./Fonts/PT-Astra-Sans_Italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'PT Astra Sans';
+	src: url('./Fonts/PT-Astra-Sans_Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-family: 'PT Astra Sans';
+	font-size: 16px;
+}

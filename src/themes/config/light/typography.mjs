@@ -1,0 +1,30 @@
+import colors from '../colors.mjs';
+
+const typography = {
+	'typography-font-family-heading': 'PT Astra Sans',
+	'typography-font-weight-heading': 700,
+	'typography-font-family-body': 'PT Astra Sans',
+	'typography-font-weight-body': 400,
+	'typography-color-accent': colors.cyan.cyan7,
+	'typography-color-text': colors.gray.gray10,
+	'typography-color-secondary': colors.gray.gray7,
+	'typography-h1-size': '40px',
+	'typography-h1-height': '48px',
+	'typography-h2-size': '32px',
+	'typography-h2-height': '40px',
+	'typography-h3-size': '28px',
+	'typography-h3-height': '32px',
+	'typography-h4-size': '24px',
+	'typography-h4-height': '28px',
+	'typography-h5-size': '20px',
+	'typography-h5-height': '24px',
+	'typography-h6-size': '16px',
+	'typography-h6-height': '20px',
+	'typography-p-size': '16px',
+	'typography-p-height': '24px',
+	'typography-caption-size': '16px',
+	'typography-caption-height': '24px',
+	'typography-letter-spacing-heading': '0.5px',
+	'typography-letter-spacing-body': '1px',
+};
+export default typography;
