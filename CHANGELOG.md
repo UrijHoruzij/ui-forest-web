@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.0.0...v1.1.0) (2022-07-24)
+
+
+### Features
+
+* add Button ([c0a965c](https://github.com/UrijHoruzij/ui-forest-web/commit/c0a965c12e7c3488ed251c256ce0bd7f6888cf48))
+
 # 1.0.0 (2022-07-22)
 
 

@@ -9,6 +9,12 @@ Object.defineProperty(exports, "Avatar", {
     return _Avatar["default"];
   }
 });
+Object.defineProperty(exports, "Button", {
+  enumerable: true,
+  get: function get() {
+    return _Button["default"];
+  }
+});
 Object.defineProperty(exports, "GlobalStyle", {
   enumerable: true,
   get: function get() {
@@ -91,5 +97,7 @@ var _Notification = _interopRequireDefault(require("./Notification"));
 var _useNotification = _interopRequireDefault(require("./Notification/useNotification"));
 
 var _Grid = _interopRequireDefault(require("./Grid"));
+
+var _Button = _interopRequireDefault(require("./Button"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
