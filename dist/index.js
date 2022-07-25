@@ -27,6 +27,12 @@ Object.defineProperty(exports, "Grid", {
     return _Grid["default"];
   }
 });
+Object.defineProperty(exports, "Markdown", {
+  enumerable: true,
+  get: function get() {
+    return _Markdown["default"];
+  }
+});
 Object.defineProperty(exports, "Normalize", {
   enumerable: true,
   get: function get() {
@@ -99,5 +105,7 @@ var _useNotification = _interopRequireDefault(require("./Notification/useNotific
 var _Grid = _interopRequireDefault(require("./Grid"));
 
 var _Button = _interopRequireDefault(require("./Button"));
+
+var _Markdown = _interopRequireDefault(require("./Markdown"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }

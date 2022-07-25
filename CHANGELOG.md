@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.1.0...v1.2.0) (2022-07-25)
+
+
+### Bug Fixes
+
+* edit tests Avatar and Grid ([943b2bb](https://github.com/UrijHoruzij/ui-forest-web/commit/943b2bb711ee9e607ed9448803d4f0898f3081bc))
+
+
+### Features
+
+* add Markdown ([db980ad](https://github.com/UrijHoruzij/ui-forest-web/commit/db980adabae08d603e93fb589b09c3f707fb97a1))
+
 # [1.1.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.0.0...v1.1.0) (2022-07-24)
 
 
