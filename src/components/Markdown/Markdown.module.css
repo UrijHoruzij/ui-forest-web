@@ -1,0 +1,6 @@
+.container {
+	font-family: var(--markdown-font-family);
+	font-weight: var(--markdown-font-weight);
+	font-size: var(--markdown-font-size);
+	color: var(--markdown-color);
+}
