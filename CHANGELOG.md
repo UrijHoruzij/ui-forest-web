@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.2.0...v1.2.1) (2022-07-28)
+
+
+### Bug Fixes
+
+* remove * selector from GlobalStyle ([4058616](https://github.com/UrijHoruzij/ui-forest-web/commit/405861643487769e8cc9fc8ddee3e6d8c0b016fe))
+
 # [1.2.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.1.0...v1.2.0) (2022-07-25)
 
 
