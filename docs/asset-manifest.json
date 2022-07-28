@@ -4,9 +4,9 @@
     "0.16adb3bd.iframe.bundle.js.map": "./0.16adb3bd.iframe.bundle.js.map",
     "1.00e14983.iframe.bundle.js": "./1.00e14983.iframe.bundle.js",
     "2.174a681e.iframe.bundle.js": "./2.174a681e.iframe.bundle.js",
-    "main.css": "./static/css/main.4f8d1ec3.chunk.css",
-    "main.js": "./main.0d397896.iframe.bundle.js",
-    "main.css.map": "./static/css/main.4f8d1ec3.chunk.css.map",
+    "main.css": "./static/css/main.21994ee7.chunk.css",
+    "main.js": "./main.e768abe3.iframe.bundle.js",
+    "main.css.map": "./static/css/main.21994ee7.chunk.css.map",
     "runtime~main.js": "./runtime~main.c4a9b70a.iframe.bundle.js",
     "vendors~main.css": "./static/css/vendors~main.d1607a7e.chunk.css",
     "vendors~main.js": "./vendors~main.5139a293.iframe.bundle.js",
@@ -20,14 +20,14 @@
     "7.effe9037.iframe.bundle.js.LICENSE.txt": "./7.effe9037.iframe.bundle.js.LICENSE.txt",
     "iframe.html": "./iframe.html",
     "static/media/katex.min.css": "./static/media/KaTeX_Typewriter-Regular.c5c02d76.ttf",
-    "static/media/Global.module.css": "./static/media/PT-Astra-Sans_Regular.90548410.woff2",
+    "static/media/Global.css": "./static/media/PT-Astra-Sans_Regular.90548410.woff2",
     "vendors~main.5139a293.iframe.bundle.js.LICENSE.txt": "./vendors~main.5139a293.iframe.bundle.js.LICENSE.txt"
   },
   "entrypoints": [
     "runtime~main.c4a9b70a.iframe.bundle.js",
     "static/css/vendors~main.d1607a7e.chunk.css",
     "vendors~main.5139a293.iframe.bundle.js",
-    "static/css/main.4f8d1ec3.chunk.css",
-    "main.0d397896.iframe.bundle.js"
+    "static/css/main.21994ee7.chunk.css",
+    "main.e768abe3.iframe.bundle.js"
   ]
 }
