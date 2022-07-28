@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.2.1...v1.2.2) (2022-07-28)
+
+
+### Bug Fixes
+
+* edit GlobalStyle ([33341c2](https://github.com/UrijHoruzij/ui-forest-web/commit/33341c28f7a3a046ceecd313ce91a685658eb3f5))
+
 ## [1.2.1](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.2.0...v1.2.1) (2022-07-28)
 
 

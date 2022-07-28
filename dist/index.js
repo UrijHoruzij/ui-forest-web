@@ -18,7 +18,7 @@ Object.defineProperty(exports, "Button", {
 Object.defineProperty(exports, "GlobalStyle", {
   enumerable: true,
   get: function get() {
-    return _GlobalModule["default"];
+    return _Global["default"];
   }
 });
 Object.defineProperty(exports, "Grid", {
@@ -84,7 +84,7 @@ Object.defineProperty(exports, "useNotification", {
 
 var _normalize = _interopRequireDefault(require("normalize.css"));
 
-var _GlobalModule = _interopRequireDefault(require("./Global/Global.module.css"));
+var _Global = _interopRequireDefault(require("./Global.css"));
 
 var _ThemeProvider = _interopRequireDefault(require("./ThemeProvider"));
 
