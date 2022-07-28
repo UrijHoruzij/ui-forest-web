@@ -4,7 +4,7 @@ import dark from '../src/components/ThemeProvider/themes/dark.module.css';
 export const decorators = [
 	(Story) => (
 		<>
-			<GlobalStyle />
+			{/* <GlobalStyle /> */}
 			<Story />
 		</>
 	),
