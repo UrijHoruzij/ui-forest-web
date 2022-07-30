@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.2.2...v1.2.3) (2022-07-30)
+
+
+### Bug Fixes
+
+* edit Global ([48d6bde](https://github.com/UrijHoruzij/ui-forest-web/commit/48d6bdefa46a62d287a63b2dc671ee6a2ea5a6a0))
+
 ## [1.2.2](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.2.1...v1.2.2) (2022-07-28)
 
 
