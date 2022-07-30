@@ -5,14 +5,15 @@
 		"classnames": "^2.3.1",
 		"normalize.css": "^8.0.1",
 		"prop-types": "^15.7.2",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
 		"react-katex": "^2.0.2",
 		"react-markdown": "^8.0.3",
-		"react-scripts": "4.0.3",
 		"rehype-katex": "^6.0.2",
 		"remark-math": "^5.1.1",
 		"uuid": "^8.3.2"
+	},
+	"peerDependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2"
 	},
 	"scripts": {
 		"test": "react-scripts test",
@@ -22,7 +23,7 @@
 		"babel": "cross-env NODE_ENV=production babel src/components --out-dir dist",
 		"copy-fonts": "copyfiles --flat src/components/**/*.woff2 dist/Global/Fonts",
 		"copy-css": "copyfiles --up 2 src/components/**/*.css dist",
-		"copy-themes": "copyfiles --up 2 --flat src/components/ThemeProvider/**/*.css dist",
+		"copy-themes": "copyfiles --flat src/components/ThemeProvider/**/*.css dist/ThemeProvider/themes",
 		"storybook": "start-storybook -p 6006 -s public --no-manager-cache",
 		"build-storybook": "build-storybook -o docs-build",
 		"build-theme": "node ./src/themes/generator.mjs",
@@ -53,6 +54,7 @@
 		]
 	},
 	"devDependencies": {
+		"react-scripts": "4.0.3",
 		"@babel/cli": "^7.18.9",
 		"@babel/core": "^7.18.9",
 		"@babel/preset-env": "^7.18.9",
@@ -73,6 +75,7 @@
 		"@testing-library/user-event": "^12.1.10",
 		"copyfiles": "^2.4.1",
 		"cross-env": "^7.0.3",
+		"generator-css-variables": "^1.0.1",
 		"husky": "^8.0.1",
 		"prettier": "^2.5.1",
 		"react-test-renderer": "^17.0.2",
