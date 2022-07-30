@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.2.3...v1.2.4) (2022-07-30)
+
+
+### Bug Fixes
+
+* edit package.json scripts ([a0b2c29](https://github.com/UrijHoruzij/ui-forest-web/commit/a0b2c295b7a740e2e8b93aa7a1cacc685b502041))
+
 ## [1.2.3](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.2.2...v1.2.3) (2022-07-30)
 
 
