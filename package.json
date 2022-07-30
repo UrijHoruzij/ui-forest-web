@@ -12,17 +12,17 @@
 		"react-scripts": "4.0.3",
 		"rehype-katex": "^6.0.2",
 		"remark-math": "^5.1.1",
-		"uuid": "^8.3.2",
-		"web-vitals": "^1.0.1"
+		"uuid": "^8.3.2"
 	},
 	"scripts": {
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"build": "npm run rm && npm run babel && npm run build-theme && npm run copy-css && npm run copy-fonts",
+		"build": "npm run rm && npm run babel && npm run build-theme && npm run copy-css && npm run copy-themes && npm run copy-fonts",
 		"rm": "rimraf ./dist",
 		"babel": "cross-env NODE_ENV=production babel src/components --out-dir dist",
 		"copy-fonts": "copyfiles --flat src/components/**/*.woff2 dist/Global/Fonts",
 		"copy-css": "copyfiles --up 2 src/components/**/*.css dist",
+		"copy-themes": "copyfiles --up 2 --flat src/components/ThemeProvider/**/*.css dist",
 		"storybook": "start-storybook -p 6006 -s public --no-manager-cache",
 		"build-storybook": "build-storybook -o docs-build",
 		"build-theme": "node ./src/themes/generator.mjs",
