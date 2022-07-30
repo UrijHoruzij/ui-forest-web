@@ -84,7 +84,7 @@ Object.defineProperty(exports, "useNotification", {
 
 var _normalize = _interopRequireDefault(require("normalize.css"));
 
-var _Global = _interopRequireDefault(require("./Global.css"));
+var _Global = _interopRequireDefault(require("./Global/Global.css"));
 
 var _ThemeProvider = _interopRequireDefault(require("./ThemeProvider"));
 
