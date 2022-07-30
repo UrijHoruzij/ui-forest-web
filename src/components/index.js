@@ -1,5 +1,5 @@
 export { default as Normalize } from 'normalize.css';
-export { default as GlobalStyle } from './Global.css';
+export { default as GlobalStyle } from './Global/Global.css';
 export { default as ThemeProvider } from './ThemeProvider';
 export { default as ThemeContext } from './ThemeProvider/context';
 export { default as Typography } from './Typography';
