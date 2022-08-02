@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.2.4...v1.3.0) (2022-07-30)
+
+
+### Features
+
+* add generator-css-variables library ([268e1af](https://github.com/UrijHoruzij/ui-forest-web/commit/268e1af71497151a88008e0680477eb2b9724b91))
+
 ## [1.2.4](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.2.3...v1.2.4) (2022-07-30)
 
 
