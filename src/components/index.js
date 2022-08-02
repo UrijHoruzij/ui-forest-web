@@ -10,7 +10,7 @@ export { default as NotificationProvider } from './Notification';
 export { default as useNotification } from './Notification/useNotification';
 export { default as Grid } from './Grid';
 export { default as Button } from './Button';
-export { default as Markdown } from './Markdown';
+// export { default as Markdown } from './Markdown';
 
 // export { default as ZoomImage } from './ZoomImage';
 // export { default as Skeleton } from './Skeleton';
