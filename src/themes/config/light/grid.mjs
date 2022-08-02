@@ -4,6 +4,6 @@ const grid = {
 	'grid-md': '768px',
 	'grid-lg': '992px',
 	'grid-xl': '1200px',
-	'grid-xll': '1400px',
+	'grid-xxl': '1400px',
 };
 export default grid;
