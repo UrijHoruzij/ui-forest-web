@@ -12,8 +12,8 @@
 		"uuid": "^8.3.2"
 	},
 	"peerDependencies": {
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2"
+		"react": ">=17",
+		"react-dom": ">=17"
 	},
 	"scripts": {
 		"test": "react-scripts test",
@@ -54,6 +54,8 @@
 		]
 	},
 	"devDependencies": {
+		"react": "^17.0.0",
+		"react-dom": "^17.0.0",
 		"react-scripts": "4.0.3",
 		"@babel/cli": "^7.18.9",
 		"@babel/core": "^7.18.9",
