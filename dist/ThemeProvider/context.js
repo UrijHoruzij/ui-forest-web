@@ -1,12 +1,1 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-
-var _react = require("react");
-
-var ThemeContext = /*#__PURE__*/(0, _react.createContext)();
-var _default = ThemeContext;
-exports["default"] = _default;
+import{createContext}from"react";var ThemeContext=/*#__PURE__*/createContext();export default ThemeContext;

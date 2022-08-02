@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.3.0...v1.3.1) (2022-08-02)
+
+
+### Bug Fixes
+
+* edit babelrc, support esm modules ([b7a91b2](https://github.com/UrijHoruzij/ui-forest-web/commit/b7a91b21737b57d2586aee4184461a1eec15ecc0))
+* edit package.json ([e248ac1](https://github.com/UrijHoruzij/ui-forest-web/commit/e248ac193337b7d946a96fecc18a95b2cae56a8d))
+
 # [1.3.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.2.4...v1.3.0) (2022-07-30)
 
 
