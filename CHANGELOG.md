@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.3.3...v1.3.4) (2022-08-05)
+
+
+### Bug Fixes
+
+* remove Markdown components ([adce5bd](https://github.com/UrijHoruzij/ui-forest-web/commit/adce5bd2d102baf9559f2933fb658d5dc98b7a27))
+
 ## [1.3.3](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.3.2...v1.3.3) (2022-08-02)
 
 
