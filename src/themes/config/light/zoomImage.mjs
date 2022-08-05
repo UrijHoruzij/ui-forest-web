@@ -1,6 +1,6 @@
-import colors from "../colors.mjs";
+import colors from '../colors.mjs';
 
 const zoomimage = {
-  "zoomimage-base": colors.gray.gray1,
+	'zoom-image-base': colors.gray.gray1,
 };
 export default zoomimage;
