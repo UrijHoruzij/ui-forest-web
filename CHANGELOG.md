@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.3.4...v1.4.0) (2022-08-05)
+
+
+### Features
+
+* add ZoomImage ([227d8b4](https://github.com/UrijHoruzij/ui-forest-web/commit/227d8b48163eff0bd50826e5bce44d503c988f43))
+
 ## [1.3.4](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.3.3...v1.3.4) (2022-08-05)
 
 
