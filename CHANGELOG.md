@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.3.2...v1.3.3) (2022-08-02)
+
+
+### Bug Fixes
+
+* edit grid theme ([6314638](https://github.com/UrijHoruzij/ui-forest-web/commit/63146385818cce938a4a0b8f57a739c06874e4e2))
+
 ## [1.3.2](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.3.1...v1.3.2) (2022-08-02)
 
 
