@@ -3,13 +3,13 @@ import colors from '../src/themes/config/colors';
 export default create({
 	base: 'light',
 
-	colorPrimary: colors.cyan.cyan7,
-	colorSecondary: colors.cyan.cyan7,
+	colorPrimary: colors.teal.teal7,
+	colorSecondary: colors.teal.teal7,
 
 	// UI
-	appBg: colors.gray.gray1,
-	appContentBg: colors.gray.gray1,
-	appBorderColor: colors.gray.gray3,
+	appBg: colors.grey.grey1,
+	appContentBg: colors.grey.grey1,
+	appBorderColor: colors.grey.grey3,
 	appBorderRadius: 4,
 
 	// Typography
@@ -17,18 +17,18 @@ export default create({
 	fontCode: 'monospace',
 
 	// Text colors
-	textColor: colors.gray.gray9,
-	textInverseColor: colors.gray.gray1,
+	textColor: colors.grey.grey10,
+	textInverseColor: colors.grey.grey1,
 
 	// Toolbar default and active colors
-	barTextColor: colors.gray.gray9,
-	barSelectedColor: colors.cyan.cyan9,
-	barBg: colors.gray.gray2,
+	barTextColor: colors.grey.grey10,
+	barSelectedColor: colors.teal.teal7,
+	barBg: colors.grey.grey2,
 
 	// Form colors
-	inputBg: colors.gray.gray2,
-	inputBorder: colors.gray.gray5,
-	inputTextColor: colors.gray.gray9,
+	inputBg: colors.grey.grey2,
+	inputBorder: colors.grey.grey5,
+	inputTextColor: colors.grey.grey10,
 	inputBorderRadius: 4,
 
 	brandTitle: 'UI Forest',
