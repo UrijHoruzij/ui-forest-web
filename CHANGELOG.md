@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.4.0...v1.4.1) (2022-08-10)
+
+
+### Bug Fixes
+
+* edit colors pallete ([da4be7f](https://github.com/UrijHoruzij/ui-forest-web/commit/da4be7f1401c44affdbfdd7d1b7cee7aa05e2db2))
+
 # [1.4.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.3.4...v1.4.0) (2022-08-05)
 
 
