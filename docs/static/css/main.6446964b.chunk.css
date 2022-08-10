@@ -1009,6 +1009,7 @@ html {
 	position: relative;
 	font-family: var(--button-font-family);
 	font-weight: var(--button-font-weight);
+	letter-spacing: var(--button-letter-spacing);
 	cursor: pointer;
 	margin: 0;
 	text-decoration: none;
@@ -1025,33 +1026,23 @@ html {
 	   -moz-user-select: none;
 	    -ms-user-select: none;
 	        user-select: none;
-	cursor: pointer;
 	white-space: nowrap;
 	transition: all ease-in-out 0.3s;
 }
 .Button_small__1zbeU {
-	height: 24px;
-	min-width: 24px;
 	font-size: 12px;
-	line-height: 24px;
-	padding-left: 12px;
-	padding-right: 12px;
+	line-height: 16px;
+	padding: 6px 12px;
 }
 .Button_medium__36X0N {
-	height: 32px;
-	min-width: 32px;
 	font-size: 16px;
-	line-height: 32px;
-	padding-left: 16px;
-	padding-right: 16px;
+	line-height: 20px;
+	padding: 8px 16px;
 }
 .Button_large__3F305 {
-	height: 40px;
-	min-width: 40px;
 	font-size: 20px;
-	line-height: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
+	line-height: 24px;
+	padding: 12px 24px;
 }
 .Button_primary__1mTxz {
 	color: var(--button-primary-text);
@@ -1069,65 +1060,28 @@ html {
 	color: var(--button-primary-activ-text);
 	background-color: var(--button-primary-activ-base);
 }
-/*********/
-.Button_primary__danger__1Vc5Q {
-	color: var(--button-primary-text);
-	background-color: var(--button-primary-danger-base);
-}
-.Button_primary__danger__1Vc5Q:hover {
-	color: var(--button-primary-danger-hover-text);
-	background-color: var(--button-primary-danger-hover-base);
-}
-.Button_primary__danger__1Vc5Q:focus {
-	color: var(--button-primary-danger-focus-text);
-	background-color: var(--button-primary-danger-focus-base);
-}
-.Button_primary__danger__1Vc5Q:activ {
-	color: var(--button-primary-danger-activ-text);
-	background-color: var(--button-primary-danger-activ-base);
-}
 /**********/
-.Button_default__3Zlg- {
-	color: var(--button-default-text);
-	background-color: var(--button-default-base);
-	border: 1px solid var(--button-default-border);
+.Button_secondary__2t2Od {
+	color: var(--button-secondary-text);
+	background-color: var(--button-secondary-base);
+	border: 1px solid var(--button-secondary-border);
 }
-.Button_default__3Zlg-:hover {
-	color: var(--button-default-hover-text);
-	background-color: var(--button-default-hover-base);
-	border: 1px solid var(--button-default-hover-border);
+.Button_secondary__2t2Od:hover {
+	color: var(--button-secondary-hover-text);
+	background-color: var(--button-secondary-hover-base);
+	border: 1px solid var(--button-secondary-hover-border);
 }
-.Button_default__3Zlg-:focus {
-	color: var(--button-default-focus-text);
-	background-color: var(--button-default-focus-base);
-	border: 1px solid var(--button-default-focus-border);
+.Button_secondary__2t2Od:focus {
+	color: var(--button-secondary-focus-text);
+	background-color: var(--button-secondary-focus-base);
+	border: 1px solid var(--button-secondary-focus-border);
 }
-.Button_default__3Zlg-:activ {
-	color: var(--button-default-activ-text);
-	background-color: var(--button-default-activ-base);
-	border: 1px solid var(--button-default-activ-border);
+.Button_secondary__2t2Od:activ {
+	color: var(--button-secondary-activ-text);
+	background-color: var(--button-secondary-activ-base);
+	border: 1px solid var(--button-secondary-activ-border);
 }
-/*********/
-.Button_default__danger__yIEm5 {
-	color: var(--button-default-danger-text);
-	background-color: var(--button-default-danger-base);
-	border: 1px solid var(--button-default-danger-border);
-}
-.Button_default__danger__yIEm5:hover {
-	color: var(--button-default-danger-hover-text);
-	background-color: var(--button-default-danger-hover-base);
-	border: 1px solid var(--button-default-danger-hover-border);
-}
-.Button_default__danger__yIEm5:focus {
-	color: var(--button-default-danger-focus-text);
-	background-color: var(--button-default-danger-focus-base);
-	border: 1px solid var(--button-default-danger-focus-border);
-}
-.Button_default__danger__yIEm5:activ {
-	color: var(--button-default-danger-activ-text);
-	background-color: var(--button-default-danger-activ-base);
-	border: 1px solid var(--button-default-danger-activ-border);
-}
+
 /***********/
 .Button_text__IJxlq {
 	height: 100%;
@@ -1146,53 +1100,23 @@ html {
 	color: var(--button-text-activ-text);
 	background-color: var(--button-text-activ-base);
 }
-/*******/
-.Button_text__danger__2iHDQ {
-	height: 100%;
-	color: var(--button-text-danger-text);
-	background-color: var(--button-text-danger-base);
+
+/********/
+.Button_danger__311uS {
+	color: var(--button-danger-text);
+	background-color: var(--button-danger-base);
 }
-.Button_text__danger__2iHDQ:hover {
-	color: var(--button-text-danger-hover-text);
-	background-color: var(--button-text-danger-hover-base);
+.Button_danger__311uS:hover {
+	color: var(--button-danger-hover-text);
+	background-color: var(--button-danger-hover-base);
 }
-.Button_text__danger__2iHDQ:focus {
-	color: var(--button-text-danger-focus-text);
-	background-color: var(--button-text-danger-focus-base);
+.Button_danger__311uS:focus {
+	color: var(--button-danger-focus-text);
+	background-color: var(--button-danger-focus-base);
 }
-.Button_text__danger__2iHDQ:activ {
-	color: var(--button-text-danger-activ-text);
-	background-color: var(--button-text-danger-activ-base);
-}
-/*************/
-.Button_link__3eKQO {
-	height: 100%;
-	color: var(--button-link-text);
-	background-color: transparent;
-}
-.Button_link__3eKQO:hover {
-	color: var(--button-link-hover-text);
-}
-.Button_link__3eKQO:focus {
-	color: var(--button-link-focus-text);
-}
-.Button_link__3eKQO:activ {
-	color: var(--button-link-activ-text);
-}
-/***********/
-.Button_link__danger__1LP0b {
-	height: 100%;
-	color: var(--button-link-danger-text);
-	background-color: transparent;
-}
-.Button_link__danger__1LP0b:hover {
-	color: var(--button-link-danger-hover-text);
-}
-.Button_link__danger__1LP0b:focus {
-	color: var(--button-link-danger-focus-text);
-}
-.Button_link__danger__1LP0b:activ {
-	color: var(--button-link-danger-activ-text);
+.Button_danger__311uS:activ {
+	color: var(--button-danger-activ-text);
+	background-color: var(--button-danger-activ-base);
 }
 /********/
 .Button_disabled__2c3jr {
@@ -1274,4 +1198,4 @@ html {
 }
 
 
-/*# sourceMappingURL=main.03e70d0c.chunk.css.map*/
+/*# sourceMappingURL=main.6446964b.chunk.css.map*/
