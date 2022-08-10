@@ -15,32 +15,19 @@ const changeSize = (size) => {
 			return styles.medium;
 	}
 };
-const changeDanger = (variant, danger) => {
+const changeDanger = (danger) => {
 	if (danger) {
-		switch (variant) {
-			case 'primary':
-				return styles.primary__danger;
-			case 'default':
-				return styles.default__danger;
-			case 'text':
-				return styles.text__danger;
-			case 'link':
-				return styles.link__danger;
-			default:
-				return;
-		}
+		return styles.danger;
 	}
 };
 const changeVariant = (variant) => {
 	switch (variant) {
 		case 'primary':
 			return styles.primary;
-		case 'default':
-			return styles.default;
+		case 'secondary':
+			return styles.secondary;
 		case 'text':
 			return styles.text;
-		case 'link':
-			return styles.link;
 		default:
 			return;
 	}
@@ -53,7 +40,7 @@ const Button = (props) => {
 			props.className,
 			styles.container,
 			{ [styles.disabled]: props.disabled },
-			changeDanger(props.variant, props.danger),
+			changeDanger(props.danger),
 			changeSize(props.size),
 			changeVariant(props.variant),
 		);
@@ -78,7 +65,7 @@ Button.propTypes = {
 	size: PropTypes.oneOf(['small', 'medium', 'large']),
 	styles: PropTypes.object,
 	type: PropTypes.oneOfType([PropTypes.oneOf(['button', 'reset', 'submit']), PropTypes.string]),
-	variant: PropTypes.oneOf(['primary', 'default', 'text', 'link']),
+	variant: PropTypes.oneOf(['primary', 'secondary', 'text']),
 };
 
 Button.defaultProps = {
@@ -87,7 +74,7 @@ Button.defaultProps = {
 	// loading: false,
 	danger: false,
 	disabled: false,
-	variant: 'default',
+	variant: 'secondary',
 };
 
 export default Button;
