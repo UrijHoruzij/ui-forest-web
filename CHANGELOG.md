@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.4.2...v1.5.0) (2022-08-17)
+
+
+### Features
+
+* add Input ([022904d](https://github.com/UrijHoruzij/ui-forest-web/commit/022904dc6695c042629cd377aa3ea2dc5ebaebf5))
+
 ## [1.4.2](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.4.1...v1.4.2) (2022-08-10)
 
 

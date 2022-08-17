@@ -119,6 +119,15 @@
 	--button-danger-activ-text: #FAFAFA;
 	--button-danger-activ-base: #E53935;
 	--zoom-image-base: #FAFAFA;
+	--input-font-family: PT Astra Sans;
+	--input-font-weight: 400;
+	--input-color-label: #212121;
+	--input-color-input: #212121;
+	--input-color-border-input: #BDBDBD;
+	--input-color-focus: #00897B;
+	--input-color-placeholder: #BDBDBD;
+	--input-color-success: #66BB6A;
+	--input-color-error: #D32F2F;
 	--radius: 4px;
 	--blur: 16px;
 }
