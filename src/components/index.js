@@ -11,6 +11,7 @@ export { default as useNotification } from './Notification/useNotification';
 export { default as Grid } from './Grid';
 export { default as Button } from './Button';
 export { default as ZoomImage } from './ZoomImage';
+export { default as Input } from './Input';
 
 // export { default as Skeleton } from './Skeleton';
 // export { default as Slider } from './Slider';
@@ -20,7 +21,6 @@ export { default as ZoomImage } from './ZoomImage';
 // export { default as MaskImage } from './MaskImage';
 // export { default as Range } from './Range';
 // export { default as List } from './List';
-// export { default as Input } from './Input';
 // export { default as Frame } from './Frame';
 // export { default as Tags } from './Tags';
 // export { default as Image } from './Image';

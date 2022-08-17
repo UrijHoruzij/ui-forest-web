@@ -9,7 +9,7 @@ export { default as zoomImage } from './zoomImage.mjs';
 // export { default as slider } from './slider.mjs';
 // export { default as sliderBeforeAfter } from './sliderBeforeAfter.mjs';
 // export { default as tabs } from './tabs.mjs';
-// export { default as input } from './input.mjs';
+export { default as input } from './input.mjs';
 // export { default as frame } from './frame.mjs';
 // export { default as skeleton } from './skeleton.mjs';
 
