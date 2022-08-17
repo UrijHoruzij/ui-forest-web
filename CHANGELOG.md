@@ -1,3 +1,10 @@
+## [1.4.2](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.4.1...v1.4.2) (2022-08-10)
+
+
+### Bug Fixes
+
+* edit Button ([37168f0](https://github.com/UrijHoruzij/ui-forest-web/commit/37168f095474c35d6874fd08b0f0f9b03efe313f))
+
 ## [1.4.1](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.4.0...v1.4.1) (2022-08-10)
 
 
