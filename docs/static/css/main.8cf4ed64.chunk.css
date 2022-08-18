@@ -1312,6 +1312,19 @@ html {
 	color: var(--input-color-error);
 	margin-top: 4px;
 }
+.Input_password__icon__15WLo {
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	cursor: pointer;
+	fill: var(--input-color-border-input);
+	transition: all 0.3s ease-in-out;
+}
+.Input_password__icon__15WLo:hover {
+	fill: var(--input-color-focus);
+}
 
 
-/*# sourceMappingURL=main.16a72575.chunk.css.map*/
+/*# sourceMappingURL=main.8cf4ed64.chunk.css.map*/
