@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.5.0...v1.6.0) (2022-08-18)
+
+
+### Features
+
+* add Input.Password ([930cd14](https://github.com/UrijHoruzij/ui-forest-web/commit/930cd14265af08b5cbda8404550fa473253e95af))
+
 # [1.5.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.4.2...v1.5.0) (2022-08-17)
 
 
