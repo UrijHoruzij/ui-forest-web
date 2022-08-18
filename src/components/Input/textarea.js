@@ -18,7 +18,7 @@ const changeSize = (size) => {
 };
 
 const Textarea = (props) => {
-	const { id, name, value, status, defaultValue, size } = props;
+	const { id, name, status, size } = props;
 	return (
 		<InputContainer {...props}>
 			<textarea
@@ -30,9 +30,10 @@ const Textarea = (props) => {
 					changeSize(size),
 				)}
 				{...props}
-				value={value !== '' ? value : defaultValue}
 				id={id ? id : name}
 			/>
+			<div className={styles.container__focus}></div>
+			{status === 'success' ? <div className={styles.container__success}></div> : null}
 		</InputContainer>
 	);
 };
@@ -49,7 +50,6 @@ Textarea.propTypes = {
 	style: PropTypes.object,
 	onChange: PropTypes.func,
 	visibleTitle: PropTypes.bool,
-	defaultValue: PropTypes.string,
 	disabled: PropTypes.bool,
 	onPressEnter: PropTypes.func,
 };

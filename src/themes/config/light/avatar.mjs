@@ -16,7 +16,7 @@ const avatar = {
 	'avatar-check-online-background-medium': '12px',
 	'avatar-check-online-background-large': '20px',
 	'avatar-color-text': colors.grey.grey10,
-	'avatar-color-check-online': colors.green.green5,
-	'avatar-color-check-online-background': colors.grey.grey2,
+	'avatar-color-check-online': colors.green.green6,
+	'avatar-color-check-online-background': colors.grey.grey1,
 };
 export default avatar;

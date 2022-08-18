@@ -17,11 +17,11 @@ describe('Input component', () => {
 					name="login"
 					help="Неправильный пароль"
 					status="error"
-					defaultValue="login"
 					onChange={() => {}}
 				/>
 				<Input type="text" value="" placeholder="Логин" name="login" onChange={() => {}} visibleTitle={false} />
 				<Input.Textarea value="" placeholder="Логин" name="login" onChange={() => {}} visibleTitle={false} />
+				<Input.Password value="" placeholder="Пароль" name="password" onChange={() => {}} visibleTitle={false} />
 			</ThemeProvider>
 		);
 		render(component);

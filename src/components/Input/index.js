@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './Input.module.css';
 import Textarea from './textarea';
-
+import Password from './password';
 import InputContainer from './container';
 
 const changeSize = (size) => {
@@ -20,7 +20,7 @@ const changeSize = (size) => {
 };
 
 const Input = (props) => {
-	const { id, name, value, status, defaultValue, size } = props;
+	const { id, name, status, size } = props;
 	return (
 		<InputContainer {...props}>
 			<input
@@ -32,14 +32,16 @@ const Input = (props) => {
 					changeSize(size),
 				)}
 				{...props}
-				value={value !== '' ? value : defaultValue}
 				id={id ? id : name}
 			/>
+			<div className={styles.container__focus}></div>
+			{status === 'success' ? <div className={styles.container__success}></div> : null}
 		</InputContainer>
 	);
 };
 
 Input.Textarea = Textarea;
+Input.Password = Password;
 
 Input.propTypes = {
 	id: PropTypes.string,
@@ -54,7 +56,6 @@ Input.propTypes = {
 	style: PropTypes.object,
 	onChange: PropTypes.func,
 	visibleTitle: PropTypes.bool,
-	defaultValue: PropTypes.string,
 	disabled: PropTypes.bool,
 	onPressEnter: PropTypes.func,
 };
