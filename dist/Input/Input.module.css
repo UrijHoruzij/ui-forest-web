@@ -98,3 +98,16 @@
 	color: var(--input-color-error);
 	margin-top: 4px;
 }
+.password__icon {
+	position: absolute;
+	top: 50%;
+	right: 12px;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	cursor: pointer;
+	fill: var(--input-color-border-input);
+	transition: all 0.3s ease-in-out;
+}
+.password__icon:hover {
+	fill: var(--input-color-focus);
+}
