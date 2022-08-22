@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.6.0...v1.7.0) (2022-08-22)
+
+
+### Features
+
+* add Form and hook useForm ([d4a9541](https://github.com/UrijHoruzij/ui-forest-web/commit/d4a954105627a7b00dfbac23b13ada0294257de8))
+
 # [1.6.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.5.0...v1.6.0) (2022-08-18)
 
 
