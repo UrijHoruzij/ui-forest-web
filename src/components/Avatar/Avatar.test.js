@@ -26,6 +26,12 @@ describe('Avatar component', () => {
 					isOnline
 					size="large"
 				/>
+				<Avatar.Group
+					users={[
+						<Avatar avatar="https://images.unsplash.com/photo-1517841905240-472988babdf9" fullname="Helena Lopes" />,
+						<Avatar avatar="https://images.unsplash.com/photo-1517841905240-472988babdf9" fullname="Helena Lopes" />,
+						<Avatar avatar="https://images.unsplash.com/photo-1517841905240-472988babdf9" fullname="Helena Lopes" />,
+					]}></Avatar.Group>
 			</ThemeProvider>
 		);
 		render(component);
