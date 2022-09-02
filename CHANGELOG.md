@@ -1,3 +1,10 @@
+## [1.10.2](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.10.1...v1.10.2) (2022-09-02)
+
+
+### Bug Fixes
+
+* edit Input status success ([0f5b0e3](https://github.com/UrijHoruzij/ui-forest-web/commit/0f5b0e39c4e563c43da649a8a48e4c6e447386cf))
+
 ## [1.10.1](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.10.0...v1.10.1) (2022-09-02)
 
 
