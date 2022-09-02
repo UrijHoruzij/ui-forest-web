@@ -1257,18 +1257,6 @@ html {
 	left: 0;
 	z-index: 0;
 }
-.Input_container__success__CewlK {
-	position: absolute;
-	display: block;
-	top: 50%;
-	right: 12px;
-	transform: translate(-50%, -50%);
-	width: 8px;
-	height: 8px;
-	background-color: var(--input-color-success);
-	z-index: 2;
-	border-radius: 4px;
-}
 .Input_label__z-LP7 {
 	font-family: var(--input-font-family);
 	font-weight: var(--input-font-weight);
@@ -1308,6 +1296,12 @@ html {
 }
 .Input_input__3PNbO::placeholder {
 	color: var(--input-color-placeholder);
+}
+.Input_success__J5pQn {
+	border: 1px solid var(--input-color-success);
+}
+.Input_success__J5pQn:focus {
+	border: 1px solid var(--input-color-success);
 }
 .Input_error__2VO4D {
 	border: 1px solid var(--input-color-error);
@@ -1384,4 +1378,4 @@ html {
 }
 
 
-/*# sourceMappingURL=main.f6e23d83.chunk.css.map*/
+/*# sourceMappingURL=main.f00ee5fb.chunk.css.map*/
