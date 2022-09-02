@@ -1358,5 +1358,30 @@ html {
 	fill: var(--input-color-focus);
 }
 
+.Tags_wrapper__320du {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.Tags_tag__2pvIC {
+	font-size: 16px;
+	color: var(--tags-color-text);
+	text-decoration: none;
+	white-space: nowrap;
+	padding: 8px 12px;
+	margin: 8px;
+	border-radius: 16px;
+	transition: all 0.3s;
+	cursor: pointer;
+	box-sizing: border-box;
+	background: var(--tags-color-default);
+	border: 1px solid var(--tags-color-default);
+}
+.Tags_activ__1rDcd {
+	color: var(--tags-color-activ);
+	background: none;
+	border: 1px solid var(--tags-color-activ);
+}
 
-/*# sourceMappingURL=main.9542d6f7.chunk.css.map*/
+
+/*# sourceMappingURL=main.f6e23d83.chunk.css.map*/
