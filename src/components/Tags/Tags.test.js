@@ -9,9 +9,9 @@ describe('Tags component', () => {
 		const component = (
 			<ThemeProvider>
 				<Tags>
-					<p>JS</p>
-					<p>HTML</p>
-					<p>CSS</p>
+					<Tags.Tag activ>JS</Tags.Tag>
+					<Tags.Tag>HTML</Tags.Tag>
+					<Tags.Tag>CSS</Tags.Tag>
 				</Tags>
 			</ThemeProvider>
 		);
