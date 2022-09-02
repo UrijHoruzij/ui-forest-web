@@ -14,7 +14,9 @@ export { default as ZoomImage } from './ZoomImage';
 export { default as Input } from './Input';
 export { default as Form } from './Form';
 export { default as useForm } from './Form/useForm';
+export { default as Tags } from './Tags';
 
+// export { default as Image } from './Image';
 // export { default as Skeleton } from './Skeleton';
 // export { default as Slider } from './Slider';
 // export { default as Tabs } from './Tabs';
@@ -24,5 +26,3 @@ export { default as useForm } from './Form/useForm';
 // export { default as Range } from './Range';
 // export { default as List } from './List';
 // export { default as Frame } from './Frame';
-// export { default as Tags } from './Tags';
-// export { default as Image } from './Image';

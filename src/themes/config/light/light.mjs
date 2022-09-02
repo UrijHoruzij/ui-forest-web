@@ -1,4 +1,4 @@
-import { typography, pagination, avatar, grid, notification, button, zoomImage, input } from './index.mjs';
+import { typography, pagination, avatar, grid, notification, button, zoomImage, input, tags } from './index.mjs';
 const theme = {
 	name: 'light',
 	'font-family': 'PT Astra Sans, sans-serif',
@@ -14,6 +14,7 @@ const theme = {
 	...button,
 	...zoomImage,
 	...input,
+	...tags,
 	radius: '4px',
 	blur: '16px',
 };
