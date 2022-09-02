@@ -28,6 +28,7 @@ const Input = (props) => {
 					styles.input,
 					{
 						[styles.error]: status === 'error',
+						[styles.success]: status === 'success',
 					},
 					changeSize(size),
 				)}
@@ -35,7 +36,6 @@ const Input = (props) => {
 				id={id ? id : name}
 			/>
 			<div className={styles.container__focus}></div>
-			{status === 'success' ? <div className={styles.container__success}></div> : null}
 		</InputContainer>
 	);
 };
@@ -52,7 +52,7 @@ Input.propTypes = {
 	help: PropTypes.string,
 	className: PropTypes.string,
 	size: PropTypes.oneOf(['small', 'medium', 'large']),
-	status: PropTypes.oneOf(['error', 'success', 'default']),
+	status: PropTypes.oneOf(['error', 'default']),
 	style: PropTypes.object,
 	onChange: PropTypes.func,
 	visibleTitle: PropTypes.bool,

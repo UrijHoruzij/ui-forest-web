@@ -17,18 +17,6 @@
 	left: 0;
 	z-index: 0;
 }
-.container__success {
-	position: absolute;
-	display: block;
-	top: 50%;
-	right: 12px;
-	transform: translate(-50%, -50%);
-	width: 8px;
-	height: 8px;
-	background-color: var(--input-color-success);
-	z-index: 2;
-	border-radius: 4px;
-}
 .label {
 	font-family: var(--input-font-family);
 	font-weight: var(--input-font-weight);
@@ -62,6 +50,12 @@
 }
 .input::placeholder {
 	color: var(--input-color-placeholder);
+}
+.success {
+	border: 1px solid var(--input-color-success);
+}
+.success:focus {
+	border: 1px solid var(--input-color-success);
 }
 .error {
 	border: 1px solid var(--input-color-error);

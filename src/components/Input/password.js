@@ -30,6 +30,7 @@ const Password = (props) => {
 					styles.input,
 					{
 						[styles.error]: status === 'error',
+						[styles.success]: status === 'success',
 					},
 					changeSize(size),
 				)}

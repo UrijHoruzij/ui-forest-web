@@ -26,6 +26,7 @@ const Textarea = (props) => {
 					styles.input,
 					{
 						[styles.error]: status === 'error',
+						[styles.success]: status === 'success',
 					},
 					changeSize(size),
 				)}
@@ -33,7 +34,6 @@ const Textarea = (props) => {
 				id={id ? id : name}
 			/>
 			<div className={styles.container__focus}></div>
-			{status === 'success' ? <div className={styles.container__success}></div> : null}
 		</InputContainer>
 	);
 };
