@@ -1,3 +1,10 @@
+## [1.10.1](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.10.0...v1.10.1) (2022-09-02)
+
+
+### Bug Fixes
+
+* edit test Tags ([9752cff](https://github.com/UrijHoruzij/ui-forest-web/commit/9752cff5c628ed9a00f1424221d8d0c0c79f91ae))
+
 # [1.10.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.9.0...v1.10.0) (2022-09-02)
 
 
