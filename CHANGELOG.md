@@ -1,3 +1,10 @@
+# [1.10.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.9.0...v1.10.0) (2022-09-02)
+
+
+### Features
+
+* add Image ([628fe8f](https://github.com/UrijHoruzij/ui-forest-web/commit/628fe8f1da11dedaf7006485e64943cdad660053))
+
 # [1.9.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.8.0...v1.9.0) (2022-09-02)
 
 
