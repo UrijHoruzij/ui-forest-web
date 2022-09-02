@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.8.0...v1.9.0) (2022-09-02)
+
+
+### Features
+
+* add Tags ([65aa06c](https://github.com/UrijHoruzij/ui-forest-web/commit/65aa06c38286e87f689de7b6acac2ffcc39d6dde))
+
 # [1.8.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.7.0...v1.8.0) (2022-09-01)
 
 

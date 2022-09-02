@@ -133,6 +133,9 @@
 	--input-color-placeholder: #BDBDBD;
 	--input-color-success: #66BB6A;
 	--input-color-error: #D32F2F;
+	--tags-color-text: #212121;
+	--tags-color-default: #E0E0E0;
+	--tags-color-activ: #00897B;
 	--radius: 4px;
 	--blur: 16px;
 }
