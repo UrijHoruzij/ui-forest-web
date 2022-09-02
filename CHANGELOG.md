@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.7.0...v1.8.0) (2022-09-01)
+
+
+### Features
+
+* modification Avatar, add Avatar.Group ([8a95dc7](https://github.com/UrijHoruzij/ui-forest-web/commit/8a95dc756847e7e29001f7cc30d922ceda194680))
+
 # [1.7.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.6.0...v1.7.0) (2022-08-22)
 
 
