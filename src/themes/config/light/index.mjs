@@ -7,7 +7,7 @@ export { default as button } from './button.mjs';
 export { default as zoomImage } from './zoomImage.mjs';
 export { default as input } from './input.mjs';
 export { default as tags } from './tags.mjs';
-// export { default as image } from './image.mjs';
+export { default as image } from './image.mjs';
 
 // export { default as slider } from './slider.mjs';
 // export { default as sliderBeforeAfter } from './sliderBeforeAfter.mjs';
