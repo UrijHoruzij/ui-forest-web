@@ -13,6 +13,6 @@ export const Default = () => (
 		urlFirstImage="https://i.imgur.com/s08MkXC.jpg"
 		urlSecondImage="https://i.imgur.com/PfIWek4.jpg"></SliderBeforeAfter>
 );
-export const One = () => (
+export const OneImage = () => (
 	<SliderBeforeAfter width={900} height={600} urlFirstImage="https://i.imgur.com/s08MkXC.jpg"></SliderBeforeAfter>
 );
