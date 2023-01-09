@@ -52,14 +52,17 @@
 	--notification-color-error: #EF5350;
 	--notification-color-warning: #FFA726;
 	--notification-color-info: #42A5F5;
+	--avatar-size-wrapper-small: 48px;
+	--avatar-size-wrapper-medium: 92px;
+	--avatar-size-wrapper-large: 184px;
 	--avatar-size-small: 44px;
 	--avatar-size-medium: 88px;
 	--avatar-size-large: 176px;
 	--avatar-font-family: PT Astra Sans;
 	--avatar-font-weight: 400;
-	--avatar-symbol-small: 18px;
-	--avatar-symbol-medium: 24px;
-	--avatar-symbol-large: 36px;
+	--avatar-symbol-small: 20px;
+	--avatar-symbol-medium: 32px;
+	--avatar-symbol-large: 48px;
 	--avatar-check-online-small: 6px;
 	--avatar-check-online-medium: 10px;
 	--avatar-check-online-large: 16px;
@@ -67,8 +70,10 @@
 	--avatar-check-online-background-medium: 12px;
 	--avatar-check-online-background-large: 20px;
 	--avatar-color-text: #212121;
-	--avatar-color-check-online: #66BB6A;
-	--avatar-color-check-online-background: #F5F5F5;
+	--avatar-color-wrapper: #FAFAFA;
+	--avatar-color-add: #4CAF50;
+	--avatar-color-check-online: #4CAF50;
+	--avatar-color-check-online-background: #FAFAFA;
 	--button-font-family: PT Astra Sans;
 	--button-font-weight: 400;
 	--button-letter-spacing: 1px;
@@ -128,6 +133,12 @@
 	--input-color-placeholder: #BDBDBD;
 	--input-color-success: #66BB6A;
 	--input-color-error: #D32F2F;
+	--tags-color-text: #212121;
+	--tags-color-default: #E0E0E0;
+	--tags-color-activ: #00897B;
+	--image-color-bg: #FAFAFA;
+	--slider-before-after-colors-slider: #FAFAFA;
+	--slider-before-after-colors-arrows: #212121;
 	--radius: 4px;
 	--blur: 16px;
 }

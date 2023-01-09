@@ -1,4 +1,16 @@
-import { typography, pagination, avatar, grid, notification, button, zoomImage, input, tags, image } from './index.mjs';
+import {
+	typography,
+	pagination,
+	avatar,
+	grid,
+	notification,
+	button,
+	zoomImage,
+	input,
+	tags,
+	image,
+	sliderBeforeAfter,
+} from './index.mjs';
 const theme = {
 	name: 'light',
 	'font-family': 'PT Astra Sans, sans-serif',
@@ -16,6 +28,7 @@ const theme = {
 	...input,
 	...tags,
 	...image,
+	...sliderBeforeAfter,
 	radius: '4px',
 	blur: '16px',
 };
