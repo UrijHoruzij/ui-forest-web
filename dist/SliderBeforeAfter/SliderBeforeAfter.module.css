@@ -1,0 +1,72 @@
+.wrapper {
+	position: relative;
+}
+.image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+.foregroundImage {
+	width: 50%;
+	border-right: 4px solid var(--slider-before-after-colors-slider);
+}
+.slider {
+	position: absolute;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	cursor: pointer;
+}
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 4px;
+	height: 100%;
+	background: none;
+	cursor: pointer;
+}
+.slider::-moz-range-thumb {
+	width: 4px;
+	height: 100%;
+	background: none;
+	cursor: pointer;
+}
+.buttonSlider {
+	pointer-events: none;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: var(--slider-before-after-colors-slider);
+	left: 50%;
+	top: 50%;
+	transform: translate(-16px, -15px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.buttonSlider::after,
+.buttonSlider::before {
+	content: '';
+	padding: 3px;
+	display: inline-block;
+	border: solid var(--slider-before-after-colors-arrows);
+	border-width: 0 2px 2px 0;
+}
+.buttonSlider::after {
+	transform: rotate(-45deg);
+}
+.buttonSlider::before {
+	transform: rotate(135deg);
+}

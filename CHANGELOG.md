@@ -1,3 +1,15 @@
+# [1.11.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.10.2...v1.11.0) (2023-01-09)
+
+
+### Bug Fixes
+
+* edit workflows ([614abf2](https://github.com/UrijHoruzij/ui-forest-web/commit/614abf2dbd0ad538bc875d83a69535cffecae31a))
+
+
+### Features
+
+* add SliderBeforeAfter component ([c96e4d2](https://github.com/UrijHoruzij/ui-forest-web/commit/c96e4d2c4dcfd2c15c6c52433c8acec6e9f1ba6f))
+
 ## [1.10.2](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.10.1...v1.10.2) (2022-09-02)
 
 

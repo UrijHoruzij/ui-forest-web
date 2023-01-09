@@ -137,6 +137,8 @@
 	--tags-color-default: #E0E0E0;
 	--tags-color-activ: #00897B;
 	--image-color-bg: #FAFAFA;
+	--slider-before-after-colors-slider: #FAFAFA;
+	--slider-before-after-colors-arrows: #212121;
 	--radius: 4px;
 	--blur: 16px;
 }
