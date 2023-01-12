@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.11.0...v1.11.1) (2023-01-09)
+
+
+### Bug Fixes
+
+* edit workflows ([6aaf06f](https://github.com/UrijHoruzij/ui-forest-web/commit/6aaf06f037121a1092471890284a7ffcc2cae742))
+
 # [1.11.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.10.2...v1.11.0) (2023-01-09)
 
 
