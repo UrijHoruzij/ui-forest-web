@@ -8,11 +8,20 @@ export default {
 
 export const Default = () => (
 	<SliderBeforeAfter
-		width={900}
-		height={600}
+		size={400}
 		urlFirstImage="https://i.imgur.com/s08MkXC.jpg"
 		urlSecondImage="https://i.imgur.com/PfIWek4.jpg"></SliderBeforeAfter>
 );
 export const OneImage = () => (
-	<SliderBeforeAfter width={900} height={600} urlFirstImage="https://i.imgur.com/s08MkXC.jpg"></SliderBeforeAfter>
+	<SliderBeforeAfter size={400} urlFirstImage="https://i.imgur.com/s08MkXC.jpg"></SliderBeforeAfter>
+);
+
+export const AspectRatioImage = () => (
+	<SliderBeforeAfter size={400} aspectRatio="16/9" urlFirstImage="https://i.imgur.com/s08MkXC.jpg"></SliderBeforeAfter>
+);
+const imgFirst = (props) => <img alt="111" src="https://i.imgur.com/s08MkXC.jpg" {...props} />;
+const imgSecond = (props) => <img alt="222" src="https://i.imgur.com/PfIWek4.jpg" {...props} />;
+
+export const ComponentsImage = () => (
+	<SliderBeforeAfter size={400} componentAfter={imgFirst} componentBefore={imgSecond}></SliderBeforeAfter>
 );

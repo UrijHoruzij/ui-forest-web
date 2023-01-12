@@ -1,47 +1,59 @@
-import React, { useRef } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './SliderBeforeAfter.module.css';
 
 const SliderBeforeAfter = (props) => {
-	const { width, height, urlFirstImage, urlSecondImage } = props;
-	const foregroundImg = useRef(null);
-	const buttonSlider = useRef(null);
+	const { componentAfter, componentBefore, size, aspectRatio, urlFirstImage, alt, urlSecondImage } = props;
+	const [sliderPos, setSliderPos] = useState(50);
 	const handleChange = (e) => {
-		const sliderPos = e.target.value;
-		foregroundImg.current.style.width = `${sliderPos}%`;
-		buttonSlider.current.style.left = `${sliderPos}%`;
+		setSliderPos(e.target.value);
 	};
-	const wrapperStyle = {
-		width: width,
-		height: height,
+	const imageContainerStyle = {
+		maxWidth: `${size}px`,
+		maxHeight: `${size}px`,
+		aspectRatio: aspectRatio,
 	};
-	const firstImageStyle = {
-		backgroundImage: `url(${urlFirstImage})`,
-	};
-	const secondImageStyle = {
-		backgroundImage: `url(${urlSecondImage})`,
+	const renderImage = (type) => {
+		if (type === 'after') {
+			if (componentAfter) {
+				let Component = componentAfter;
+				return <Component className={classNames(styles.imageAfter, styles.sliderImage, styles.image)} />;
+			} else {
+				return (
+					<img
+						className={classNames(styles.imageAfter, styles.sliderImage, styles.image)}
+						src={urlFirstImage}
+						alt={alt}
+					/>
+				);
+			}
+		} else {
+			if (componentBefore) {
+				let Component = componentBefore;
+				return <Component className={classNames(styles.imageBefore, styles.sliderImage, styles.image)} />;
+			} else {
+				return (
+					<img
+						className={classNames(styles.imageBefore, styles.sliderImage, styles.image)}
+						src={urlSecondImage}
+						alt={alt}
+					/>
+				);
+			}
+		}
 	};
 	return (
-		<div style={wrapperStyle} className={classNames(styles.wrapper)}>
-			<div style={firstImageStyle} className={classNames(styles.image)} />
-			{urlSecondImage && (
+		<div className={styles.wrapper} style={{ '--position': `${sliderPos}%`, width: `${size}px` }}>
+			<div style={imageContainerStyle}>
+				{(componentBefore || urlSecondImage) && renderImage('before')}
+				{renderImage('after')}
+			</div>
+			{(componentBefore || urlSecondImage) && (
 				<>
-					<div
-						style={secondImageStyle}
-						className={classNames(styles.image, styles.foregroundImage)}
-						ref={foregroundImg}
-					/>
-					<input
-						className={classNames(styles.slider)}
-						onChange={handleChange}
-						type="range"
-						min="1"
-						max="100"
-						value="50"
-						name="slider"
-					/>
-					<div className={classNames(styles.buttonSlider)} ref={buttonSlider}></div>
+					<input onChange={handleChange} type="range" min="0" max="100" value="50" className={styles.slider} />
+					<div className={styles.sliderLine}></div>
+					<div className={styles.sliderButton}></div>
 				</>
 			)}
 		</div>
@@ -49,15 +61,18 @@ const SliderBeforeAfter = (props) => {
 };
 
 SliderBeforeAfter.propTypes = {
-	width: PropTypes.number.isRequired,
-	height: PropTypes.number.isRequired,
-	urlFirstImage: PropTypes.string.isRequired,
+	size: PropTypes.number.isRequired,
+	aspectRatio: PropTypes.string.isRequired,
+	urlFirstImage: PropTypes.string,
 	urlSecondImage: PropTypes.string,
+	alt: PropTypes.string,
+	componentAfter: PropTypes.node,
+	componentBefore: PropTypes.node,
 };
 
 SliderBeforeAfter.defaultProps = {
-	width: 400,
-	height: 300,
+	size: 400,
+	aspectRatio: '1/1',
 };
 
 export default SliderBeforeAfter;
