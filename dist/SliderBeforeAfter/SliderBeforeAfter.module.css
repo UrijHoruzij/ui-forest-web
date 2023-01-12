@@ -1,72 +1,67 @@
 .wrapper {
+	display: flex;
+	justify-content: center;
 	position: relative;
+	overflow: hidden;
+	--position: 50%;
 }
 .image {
-	position: absolute;
-	top: 0;
-	left: 0;
+	display: block;
+	max-width: 100%;
+}
+.sliderImage {
 	width: 100%;
 	height: 100%;
-	background-size: cover;
+	object-fit: cover;
+	object-position: left;
 }
-.foregroundImage {
-	width: 50%;
-	border-right: 4px solid var(--slider-before-after-colors-slider);
+.imageBefore {
+	position: absolute;
+	inset: 0;
+	width: var(--position);
 }
 .slider {
 	position: absolute;
-	-webkit-appearance: none;
-	appearance: none;
+	inset: 0;
+	cursor: pointer;
+	opacity: 0;
 	width: 100%;
 	height: 100%;
-	outline: none;
-	margin: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background: transparent;
-	cursor: pointer;
 }
-.slider::-webkit-slider-thumb {
-	-webkit-appearance: none;
-	appearance: none;
-	width: 4px;
-	height: 100%;
-	background: none;
-	cursor: pointer;
-}
-.slider::-moz-range-thumb {
-	width: 4px;
-	height: 100%;
-	background: none;
-	cursor: pointer;
-}
-.buttonSlider {
-	pointer-events: none;
+.sliderLine {
 	position: absolute;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
+	inset: 0;
+	width: 4px;
+	height: 100%;
 	background-color: var(--slider-before-after-colors-slider);
-	left: 50%;
-	top: 50%;
-	transform: translate(-16px, -15px);
+	left: var(--position);
+	transform: translateX(-50%);
+	pointer-events: none;
+}
+.sliderButton {
+	position: absolute;
+	background-color: var(--slider-before-after-colors-slider);
+	padding: 16px 12px;
+	border-radius: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	top: 50%;
+	left: var(--position);
+	transform: translate(-50%, -50%);
+	pointer-events: none;
 }
-
-.buttonSlider::after,
-.buttonSlider::before {
+.sliderButton::after,
+.sliderButton::before {
 	content: '';
 	padding: 3px;
 	display: inline-block;
 	border: solid var(--slider-before-after-colors-arrows);
 	border-width: 0 2px 2px 0;
 }
-.buttonSlider::after {
+.sliderButton::after {
 	transform: rotate(-45deg);
 }
-.buttonSlider::before {
+.sliderButton::before {
 	transform: rotate(135deg);
 }

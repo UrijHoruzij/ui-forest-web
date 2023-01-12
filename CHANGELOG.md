@@ -1,3 +1,10 @@
+## [1.11.2](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.11.1...v1.11.2) (2023-01-12)
+
+
+### Bug Fixes
+
+* edit SliderBeforeAfter ([11aa56a](https://github.com/UrijHoruzij/ui-forest-web/commit/11aa56a0e9c54829ed501da8fe10d18c697f1e02))
+
 ## [1.11.1](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.11.0...v1.11.1) (2023-01-09)
 
 
