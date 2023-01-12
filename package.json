@@ -1,6 +1,6 @@
 {
 	"name": "ui-forest",
-	"version": "1.11.3",
+	"version": "1.11.4",
 	"dependencies": {
 		"classnames": "^2.3.1",
 		"normalize.css": "^8.0.1",
