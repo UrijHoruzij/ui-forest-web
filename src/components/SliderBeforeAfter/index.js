@@ -44,7 +44,7 @@ const SliderBeforeAfter = (props) => {
 		}
 	};
 	return (
-		<div className={styles.wrapper} style={{ '--position': `${sliderPos}%`, width: `${size}px` }} {...props}>
+		<div className={styles.wrapper} style={{ '--position': `${sliderPos}%`, width: `${size}px` }}>
 			<div style={imageContainerStyle}>
 				{(componentBefore || urlSecondImage) && renderImage('before')}
 				{renderImage('after')}
