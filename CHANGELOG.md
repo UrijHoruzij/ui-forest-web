@@ -1,3 +1,10 @@
+## [1.11.5](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.11.4...v1.11.5) (2023-01-13)
+
+
+### Bug Fixes
+
+* edit README ([58dda30](https://github.com/UrijHoruzij/ui-forest-web/commit/58dda30b266b2eb1086091c7c9bf083552dec05a))
+
 ## [1.11.4](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.11.3...v1.11.4) (2023-01-12)
 
 
