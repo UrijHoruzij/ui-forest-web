@@ -1,3 +1,10 @@
+## [1.11.6](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.11.5...v1.11.6) (2023-02-09)
+
+
+### Bug Fixes
+
+* remove secondary button base color ([1d0f932](https://github.com/UrijHoruzij/ui-forest-web/commit/1d0f93258a0c09a9bbf679ca4c1ecbb889e0f183))
+
 ## [1.11.5](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.11.4...v1.11.5) (2023-01-13)
 
 
