@@ -15,7 +15,7 @@ const button = {
 	'button-primary-activ-text': colors.grey.grey1,
 	'button-primary-activ-base': colors.teal.teal8,
 	'button-secondary-text': colors.teal.teal7,
-	'button-secondary-base': colors.grey.grey1,
+	'button-secondary-base': 'transparent',
 	'button-secondary-border': colors.teal.teal7,
 	'button-secondary-hover-text': colors.grey.grey1,
 	'button-secondary-hover-base': colors.teal.teal7,
