@@ -4,7 +4,7 @@ import NotificationContext from './context';
 
 const useNotification = () => {
 	const dispatch = useContext(NotificationContext);
-	return (props) => {
+	return (props: any) => {
 		dispatch({
 			type: 'ADD_NOTIFICATION',
 			payload: {

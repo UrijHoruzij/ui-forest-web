@@ -1,14 +1,8 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
+import {ThemeProps} from "./Theme.types";
 import ThemeContext from "./context";
-import { light, dark } from "./themes/";
 
-const defaultThemes = {
-  light: light.root,
-  dark: dark.root,
-};
-const ThemeProvider = (props) => {
+const ThemeProvider:FC<ThemeProps> = (props) => {
   const { theme, themes, children } = props;
   const [activTheme, setActivTheme] = useState(themes[theme]);
   const changeTheme = (theme) => {
@@ -21,14 +15,4 @@ const ThemeProvider = (props) => {
   );
 };
 
-ThemeProvider.propTypes = {
-  theme: PropTypes.string.isRequired,
-  themes: PropTypes.object.isRequired,
-  children: PropTypes.node,
-};
-
-ThemeProvider.defaultProps = {
-  theme: "light",
-  themes: defaultThemes,
-};
 export default ThemeProvider;

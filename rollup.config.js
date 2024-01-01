@@ -5,7 +5,7 @@ import { terser } from 'rollup-plugin-terser';
 import external from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
 import dts from 'rollup-plugin-dts';
-import packageJson from './package.json' assert {type: "json"}
+import packageJson from './package.json' assert { type: 'json' };
 
 export default [
 	{
@@ -23,7 +23,14 @@ export default [
 				sourcemap: true,
 			},
 		],
-		plugins: [external(), resolve(), commonjs(), typescript({ tsconfig: './tsconfig.json' }),postcss({modules: true,}),  terser()],
+		plugins: [
+			external(),
+			resolve(),
+			commonjs(),
+			typescript({ tsconfig: './tsconfig.json', exclude: ['src/**/*.test.(tsx|ts)'] }),
+			postcss({ modules: true }),
+			terser(),
+		],
 	},
 	{
 		input: 'dist/esm/types/index.d.ts',

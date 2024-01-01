@@ -55,7 +55,5 @@ const Group: FC<GroupProps> = ({ users, add, onAdd }) => {
 		</div>
 	);
 };
-// Group.defaultProps = {
-// 	add: false,
-// };
+
 export default Group;

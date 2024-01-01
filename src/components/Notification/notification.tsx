@@ -1,4 +1,4 @@
-import { FC, useState, useEffect } from 'react';
+import { FC, useState, useEffect, useRef } from 'react';
 import { NotificationProps } from './Notification.types';
 import { Typography } from '../';
 import styles from './Notification.module.css';
@@ -7,21 +7,25 @@ const Notification: FC<NotificationProps> = (props) => {
 	const { type } = props;
 	const [exit, setExit] = useState(false);
 	const [width, setWidth] = useState(0);
-	const [intervalID, setIntervalID] = useState<NodeJS.Timer | null>(null);
+	const timerRef = useRef<NodeJS.Timer | null>(null);
+	// const [intervalID, setIntervalID] = useState<NodeJS.Timeout | undefined>();
 	const handleStartTimer = () => {
-		const id = setInterval(() => {
+		timerRef.current = setInterval(() => {
 			setWidth((prev) => {
 				if (prev < 100) {
 					return prev + 0.5;
 				}
-				clearInterval(id);
+				if (timerRef.current) clearInterval(timerRef.current);
 				return prev;
 			});
 		}, 20);
-		setIntervalID(id);
+		// setIntervalID(id);
 	};
 	const handlePauseTimer = () => {
-		clearInterval(intervalID);
+		if (timerRef.current) {
+			clearInterval(timerRef.current);
+			timerRef.current = null;
+		}
 	};
 	const handleCloseNotification = () => {
 		handlePauseTimer();
@@ -66,8 +70,12 @@ const Notification: FC<NotificationProps> = (props) => {
 			{...props}>
 			<div className={styles.notification__border}></div>
 			<div className={styles.notification__content}>
-				<Typography type="h6">{props.title}</Typography>
-				<Typography type="text">{props.message}</Typography>
+				<Typography color="text" type="h6">
+					{props.title}
+				</Typography>
+				<Typography color="text" type="text">
+					{props.message}
+				</Typography>
 			</div>
 			<div className={styles.notification__close} onClick={(e) => handleClose()}>
 				<div className={styles.notification__closeIcon}></div>
