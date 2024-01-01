@@ -1,3 +1,10 @@
+# [1.12.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.11.6...v1.12.0) (2024-01-01)
+
+
+### Features
+
+* added typescript, rollup ([42482b7](https://github.com/UrijHoruzij/ui-forest-web/commit/42482b7534ab7e9e3cfd10a7a05d78678f35acf5))
+
 ## [1.11.6](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.11.5...v1.11.6) (2023-02-09)
 
 
