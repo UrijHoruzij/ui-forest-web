@@ -1,9 +1,9 @@
-import { CSSProperties } from "react";
+import { CSSProperties } from 'react';
 export interface PaginationProps {
     className?: string;
     style?: CSSProperties;
     arrowShow?: boolean;
-    onPageChange: Function;
+    onPageChange: (e: any) => void;
     totalCount: number;
     siblingCount: number;
     currentPage: number;
