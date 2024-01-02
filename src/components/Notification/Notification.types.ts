@@ -4,7 +4,7 @@ export interface NotificationProps {
 	id: string;
 	title: string;
 	message: string;
-	dispatch: Function;
+	dispatch: (e: any) => void;
 	className?: string;
 	style?: CSSProperties;
 	type: 'SUCCESS' | 'ERROR' | 'WARNING' | 'INFO';

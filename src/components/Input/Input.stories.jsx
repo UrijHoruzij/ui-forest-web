@@ -1,16 +1,16 @@
-import React, { useState } from 'react';
-import { Input } from '../';
+import { useState } from 'react';
+import { Input } from '..';
 
-const Textarea = Input.Textarea;
-const Password = Input.Password;
+const TextareaComponent = Input.Textarea;
+const PasswordComponent = Input.Password;
 
 export default {
 	title: 'Components/Input',
 	component: Input,
-	subcomponents: { Textarea, Password },
+	subcomponents: { TextareaComponent, PasswordComponent },
 };
 
-export const _Default = () => {
+export const Default = () => {
 	const [state, setState] = useState('');
 	return (
 		<Input
@@ -25,7 +25,7 @@ export const _Default = () => {
 	);
 };
 
-export const _Success = () => {
+export const Success = () => {
 	const [state, setState] = useState('');
 	return (
 		<Input
@@ -41,7 +41,7 @@ export const _Success = () => {
 	);
 };
 
-export const _Error = () => {
+export const Error = () => {
 	const [state, setState] = useState('');
 	return (
 		<Input
@@ -58,7 +58,7 @@ export const _Error = () => {
 	);
 };
 
-export const _HiddenTitle = () => {
+export const HiddenTitle = () => {
 	const [state, setState] = useState('');
 	return (
 		<Input
@@ -74,7 +74,7 @@ export const _HiddenTitle = () => {
 	);
 };
 
-export const _Textarea = () => {
+export const Textarea = () => {
 	const [state, setState] = useState('');
 	return (
 		<Input.Textarea
@@ -89,7 +89,7 @@ export const _Textarea = () => {
 	);
 };
 
-export const _Password = () => {
+export const Password = () => {
 	const [state, setState] = useState('');
 	return (
 		<Input.Password

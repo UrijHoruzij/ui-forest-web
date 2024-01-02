@@ -1,12 +1,12 @@
-import {CSSProperties} from "react";
+import { CSSProperties } from 'react';
 
-export interface PaginationProps{
-    className?: string,
-  style?: CSSProperties,
-  arrowShow?: boolean,
-  onPageChange: Function,
-  totalCount: number,
-  siblingCount: number,
-  currentPage: number,
-  pageSize: number,
+export interface PaginationProps {
+	className?: string;
+	style?: CSSProperties;
+	arrowShow?: boolean;
+	onPageChange: (e: any) => void;
+	totalCount: number;
+	siblingCount: number;
+	currentPage: number;
+	pageSize: number;
 }

@@ -7,7 +7,7 @@ const InputContainer: FC<InputProps> = (props) => {
 	return (
 		<div className={[className, styles.wrapper].join(' ')}>
 			{visibleTitle ? (
-				<label htmlFor={id ? id : name} className={styles.label}>
+				<label htmlFor={id || name} className={styles.label}>
 					{placeholder}
 				</label>
 			) : null}

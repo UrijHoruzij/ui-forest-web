@@ -1,14 +1,17 @@
-import React from 'react';
 import renderer from 'react-test-renderer';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import { ZoomImage, ThemeProvider } from '../';
+import { Tags, ThemeProvider } from '../';
 
-describe('ZoomImage component', () => {
-	test('Render zoomImage snapshot', () => {
+describe('Tags component', () => {
+	test('Render tags snapshot', () => {
 		const component = (
 			<ThemeProvider>
-				<ZoomImage src="https://images.unsplash.com/photo-1658696649632-f9abf30cdc98" alt="Zoom image" />
+				<Tags>
+					<Tags.Tag activ>JS</Tags.Tag>
+					<Tags.Tag>HTML</Tags.Tag>
+					<Tags.Tag>CSS</Tags.Tag>
+				</Tags>
 			</ThemeProvider>
 		);
 		render(component);

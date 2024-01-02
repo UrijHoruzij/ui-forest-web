@@ -1,9 +1,7 @@
-import React from 'react';
 // import renderer from 'react-test-renderer';
-// @ts-ignore
 import { render } from '@testing-library/react';
 // import '@testing-library/jest-dom/extend-expect';
-import { Avatar, ThemeProvider } from '../';
+import { Avatar, ThemeProvider } from '..';
 
 describe('Avatar component', () => {
 	test('Render avatar snapshot', () => {

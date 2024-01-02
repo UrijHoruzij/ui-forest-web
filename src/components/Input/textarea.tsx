@@ -34,9 +34,9 @@ const Textarea: FC<InputProps> = (props) => {
 				onChange={props.onChange}
 				disabled={props.disabled}
 				// onPressEnter={props.onPressEnter}
-				id={id ? id : name}
+				id={id || name}
 			/>
-			<div className={styles.container__focus}></div>
+			<div className={styles.container__focus} />
 		</InputContainer>
 	);
 };

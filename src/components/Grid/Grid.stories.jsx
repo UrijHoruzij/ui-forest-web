@@ -1,5 +1,4 @@
-import React from 'react';
-import { Grid } from '../';
+import { Grid } from '..';
 
 const Container = Grid.Container;
 const Row = Grid.Row;

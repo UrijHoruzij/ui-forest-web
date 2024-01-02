@@ -1,4 +1,3 @@
-import React from 'react';
 import renderer from 'react-test-renderer';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
@@ -7,7 +6,7 @@ import { Form, useForm, Input, ThemeProvider } from '../';
 describe('Input component', () => {
 	test('Render input snapshot', () => {
 		const validateInfo = (values) => {
-			let errors = {};
+			const errors = {};
 
 			if (!values.login.trim()) {
 				errors.login = 'Login required';

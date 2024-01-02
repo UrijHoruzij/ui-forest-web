@@ -1,4 +1,4 @@
-.root{
+.root {
 	--name: dark;
 	--font-family: PT Astra Sans, sans-serif;
 	--font-size: 16px;
@@ -15,7 +15,7 @@
 	--typography-font-weight-heading: 700;
 	--typography-font-family-body: PT Astra Sans;
 	--typography-font-weight-body: 400;
-	--typography-color-accent: #00ACC1;
+	--typography-color-accent: #00acc1;
 	--typography-color-text: #212121;
 	--typography-color-secondary: #757575;
 	--typography-h1-size: 40px;
@@ -41,17 +41,17 @@
 	--pagination-font-weight: 400;
 	--pagination-line-height: 20px;
 	--pagination-colors-base: #212121;
-	--pagination-colors-hover: #BDBDBD;
-	--notification-color-item: #FAFAFA;
+	--pagination-colors-hover: #bdbdbd;
+	--notification-color-item: #fafafa;
 	--notification-color-title: #212121;
 	--notification-color-message: #212121;
-	--notification-color-close: #BDBDBD;
-	--notification-color-border-close: #BDBDBD;
+	--notification-color-close: #bdbdbd;
+	--notification-color-border-close: #bdbdbd;
 	--notification-color-close-hover: #757575;
-	--notification-color-success: #66BB6A;
-	--notification-color-error: #EF5350;
-	--notification-color-warning: #FFA726;
-	--notification-color-info: #42A5F5;
+	--notification-color-success: #66bb6a;
+	--notification-color-error: #ef5350;
+	--notification-color-warning: #ffa726;
+	--notification-color-info: #42a5f5;
 	--avatar-size-small: 44px;
 	--avatar-size-medium: 88px;
 	--avatar-size-large: 176px;
@@ -67,8 +67,8 @@
 	--avatar-check-online-background-medium: 12px;
 	--avatar-check-online-background-large: 20px;
 	--avatar-color-text: #212121;
-	--avatar-color-check-online: #66BB6A;
-	--avatar-color-check-online-background: #F5F5F5;
+	--avatar-color-check-online: #66bb6a;
+	--avatar-color-check-online-background: #f5f5f5;
 	--radius: 4px;
 	--blur: 16px;
 }

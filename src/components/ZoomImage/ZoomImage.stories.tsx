@@ -1,5 +1,4 @@
-import React from 'react';
-import { ZoomImage } from '../';
+import { ZoomImage } from '..';
 
 export default {
 	title: 'Components/ZoomImage',

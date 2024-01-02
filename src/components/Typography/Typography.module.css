@@ -42,7 +42,6 @@
 	line-height: var(--typography-h1-height);
 	border: none;
 	outline: none;
-	color: var(--typography-color-text);
 }
 .h2 {
 	font-family: var(--typography-font-family-heading);
@@ -52,7 +51,6 @@
 	line-height: var(--typography-h2-height);
 	border: none;
 	outline: none;
-	color: var(--typography-color-text);
 }
 .h3 {
 	font-family: var(--typography-font-family-heading);
@@ -62,7 +60,6 @@
 	line-height: var(--typography-h3-height);
 	border: none;
 	outline: none;
-	color: var(--typography-color-text);
 }
 .h4 {
 	font-family: var(--typography-font-family-heading);
@@ -72,7 +69,6 @@
 	line-height: var(--typography-h4-height);
 	border: none;
 	outline: none;
-	color: var(--typography-color-text);
 }
 .h5 {
 	font-family: var(--typography-font-family-heading);
@@ -82,7 +78,6 @@
 	line-height: var(--typography-h5-height);
 	border: none;
 	outline: none;
-	color: var(--typography-color-text);
 }
 .h6 {
 	font-family: var(--typography-font-family-heading);
@@ -92,7 +87,6 @@
 	line-height: var(--typography-h6-height);
 	border: none;
 	outline: none;
-	color: var(--typography-color-text);
 }
 .p {
 	font-family: var(--typography-font-family-body);
@@ -102,7 +96,6 @@
 	line-height: var(--typography-p-height);
 	border: none;
 	outline: none;
-	color: var(--typography-color-text);
 }
 .caption {
 	font-family: var(--typography-font-family-body);
@@ -113,5 +106,4 @@
 	font-style: italic;
 	border: none;
 	outline: none;
-	color: var(--typography-color-text);
 }

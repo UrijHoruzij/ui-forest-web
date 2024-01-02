@@ -1,8 +1,8 @@
-import {FC} from 'react';
-import {ButtonProps} from './Button.types'
+import { FC } from 'react';
+import { ButtonProps } from './Button.types';
 import styles from './Button.module.css';
 
-const changeSize = (size:string) => {
+const changeSize = (size: string) => {
 	switch (size) {
 		case 'small':
 			return styles.small;
@@ -14,7 +14,7 @@ const changeSize = (size:string) => {
 			return styles.medium;
 	}
 };
-const changeVariant = (variant:'primary'| 'secondary'| 'text') => {
+const changeVariant = (variant: 'primary' | 'secondary' | 'text') => {
 	switch (variant) {
 		case 'primary':
 			return styles.primary;
@@ -29,22 +29,22 @@ const Button: FC<ButtonProps> = (props) => {
 	const { children, loading } = props;
 
 	return (
-		<button {...props} className={[
-			props.className,
-			styles.container,
-			props.disabled? styles.disabled: undefined,
-			props.danger ? styles.danger :undefined,
-			changeSize(props.size),
-			changeVariant(props.variant),
-			props.className
-		].join(' ')} >
-			{/* {loading && <div className={styles.loading}></div>} */}
+		<button
+			{...props}
+			className={[
+				props.className,
+				styles.container,
+				props.disabled ? styles.disabled : undefined,
+				props.danger ? styles.danger : undefined,
+				changeSize(props.size),
+				changeVariant(props.variant),
+				props.className,
+			].join(' ')}>
+			{loading && <div className={styles.loading}></div>}
 			{children}
 		</button>
 	);
 };
-
-
 
 // Button.defaultProps = {
 // 	type: 'button',

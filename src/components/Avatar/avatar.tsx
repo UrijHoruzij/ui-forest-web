@@ -4,12 +4,9 @@ import styles from './Avatar.module.css';
 import { changeSizeContainer, changeSize, changeSizeSymbol, changeSizeOnline } from './sizes';
 
 const generateColor = () => {
-	return (
-		'#' +
-		Math.floor(Math.random() * (256 * 256 * 256))
-			.toString(16)
-			.padStart(6, '0')
-	);
+	return `#${Math.floor(Math.random() * (256 * 256 * 256))
+		.toString(16)
+		.padStart(6, '0')}`;
 };
 
 const AvatarComponent: FC<AvatarProps> = (props) => {
@@ -19,11 +16,9 @@ const AvatarComponent: FC<AvatarProps> = (props) => {
 		return [props.imageClassName, styles.image, changeSize(props.size)].join(' ');
 	};
 	const renderImage = (props: AvatarProps, firstChar: string) => {
-		let Component: any = props.component;
+		const Component: any = props.component;
 		if (props.component) {
-			return (
-				<Component style={props.imageStyle} className={changeImageClassName(props)} alt={props.fullname}></Component>
-			);
+			return <Component style={props.imageStyle} className={changeImageClassName(props)} alt={props.fullname} />;
 		}
 		if (props.avatar) {
 			return (

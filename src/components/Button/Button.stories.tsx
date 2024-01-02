@@ -1,5 +1,4 @@
-import React from 'react';
-import { Button } from '../';
+import { Button } from '..';
 
 export default {
 	title: 'Components/Button',

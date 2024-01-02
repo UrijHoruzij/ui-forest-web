@@ -1,14 +1,18 @@
-import React from 'react';
 import renderer from 'react-test-renderer';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import { Image, ThemeProvider } from '../';
+import { SliderBeforeAfter, ThemeProvider } from '..';
 
-describe('Image component', () => {
-	test('Render image snapshot', () => {
+describe('SliderBeforeAfter component', () => {
+	test('Render sliderBeforeAfter snapshot', () => {
 		const component = (
 			<ThemeProvider>
-				<Image image="http://source.unsplash.com/S3eqr293Vho/600x1200" />
+				<SliderBeforeAfter
+					width={900}
+					height={600}
+					urlFirstImage="https://i.imgur.com/s08MkXC.jpg"
+					urlSecondImage="https://i.imgur.com/PfIWek4.jpg"
+				/>
 			</ThemeProvider>
 		);
 		render(component);

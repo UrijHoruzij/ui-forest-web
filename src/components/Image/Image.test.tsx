@@ -1,18 +1,13 @@
-import React from 'react';
 import renderer from 'react-test-renderer';
 import { render } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import { Grid, ThemeProvider } from '../';
+import { Image, ThemeProvider } from '..';
 
-describe('Grid component', () => {
-	test('Render grid snapshot', () => {
+describe('Image component', () => {
+	test('Render image snapshot', () => {
 		const component = (
 			<ThemeProvider>
-				<Grid>
-					<Grid.Row>
-						<Grid.Column col={12}></Grid.Column>
-					</Grid.Row>
-				</Grid>
+				<Image image="http://source.unsplash.com/S3eqr293Vho/600x1200" />
 			</ThemeProvider>
 		);
 		render(component);

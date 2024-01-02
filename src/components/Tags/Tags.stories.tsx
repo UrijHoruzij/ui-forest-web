@@ -1,5 +1,4 @@
-import React from 'react';
-import { Tags } from '../';
+import { Tags } from '..';
 
 const Tag = Tags.Tag;
 

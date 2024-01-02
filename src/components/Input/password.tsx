@@ -39,9 +39,9 @@ const Password: FC<InputProps> = (props) => {
 				disabled={props.disabled}
 				// onPressEnter={props.onPressEnter}
 				type={type}
-				id={id ? id : name}
+				id={id || name}
 			/>
-			<div className={styles.container__focus}></div>
+			<div className={styles.container__focus} />
 			{type === 'password' ? (
 				<svg
 					onClick={changeType}
