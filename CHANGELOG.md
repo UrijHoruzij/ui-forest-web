@@ -1,3 +1,11 @@
+## [1.12.2](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.12.1...v1.12.2) (2024-01-06)
+
+
+### Bug Fixes
+
+* fixed package.json ([14a9a51](https://github.com/UrijHoruzij/ui-forest-web/commit/14a9a5105b05a1ff5923d24419e4b360439a21fb))
+* merge ([01a69f2](https://github.com/UrijHoruzij/ui-forest-web/commit/01a69f29392c967b983338edabd2bffad5659008))
+
 ## [1.12.1](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.12.0...v1.12.1) (2024-01-02)
 
 
