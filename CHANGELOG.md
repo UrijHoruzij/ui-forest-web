@@ -1,3 +1,10 @@
+## [1.12.4](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.12.3...v1.12.4) (2024-01-06)
+
+
+### Bug Fixes
+
+* fixed module ([a68bd06](https://github.com/UrijHoruzij/ui-forest-web/commit/a68bd06c6eb0f074575a67aa3d0195d762eb606c))
+
 ## [1.12.3](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.12.2...v1.12.3) (2024-01-06)
 
 
