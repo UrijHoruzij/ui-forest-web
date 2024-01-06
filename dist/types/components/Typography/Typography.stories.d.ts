@@ -1,0 +1,13 @@
+import type { Meta, StoryObj } from '@storybook/react';
+import { Typography } from '../';
+declare const meta: Meta<typeof Typography>;
+export default meta;
+type Story = StoryObj<typeof Typography>;
+export declare const H1: Story;
+export declare const H2: Story;
+export declare const H3: Story;
+export declare const H4: Story;
+export declare const H5: Story;
+export declare const H6: Story;
+export declare const Text: Story;
+export declare const Caption: Story;
