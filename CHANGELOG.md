@@ -1,3 +1,11 @@
+## [1.12.1](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.12.0...v1.12.1) (2024-01-02)
+
+
+### Bug Fixes
+
+* fixed ([74124e3](https://github.com/UrijHoruzij/ui-forest-web/commit/74124e362ba42977b53926724d3319f39df8f4e7))
+* fixed eslint, storybook ([c2099b1](https://github.com/UrijHoruzij/ui-forest-web/commit/c2099b1e12ba27d3d91006d28a70c4733cea51f4))
+
 # [1.12.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.11.6...v1.12.0) (2024-01-01)
 
 

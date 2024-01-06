@@ -1,6 +1,6 @@
 import { FC, useState, useEffect, useRef } from 'react';
 import { NotificationProps } from './Notification.types';
-import { Typography } from '../';
+import { Typography } from '..';
 import styles from './Notification.module.css';
 
 const Notification: FC<NotificationProps> = (props) => {
@@ -68,7 +68,7 @@ const Notification: FC<NotificationProps> = (props) => {
 				},
 			].join(' ')}
 			{...props}>
-			<div className={styles.notification__border}></div>
+			<div className={styles.notification__border} />
 			<div className={styles.notification__content}>
 				<Typography color="text" type="h6">
 					{props.title}
@@ -77,8 +77,8 @@ const Notification: FC<NotificationProps> = (props) => {
 					{props.message}
 				</Typography>
 			</div>
-			<div className={styles.notification__close} onClick={(e) => handleClose()}>
-				<div className={styles.notification__closeIcon}></div>
+			<div className={styles.notification__close} onClick={handleClose}>
+				<div className={styles.notification__closeIcon} />
 			</div>
 			<div className={styles.notification__bar} style={{ width: `${100 - width}%` }} />
 		</div>

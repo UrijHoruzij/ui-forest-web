@@ -1,5 +1,4 @@
-import React from 'react';
-import { Notification, NotificationProvider, useNotification } from '../';
+import { Notification, NotificationProvider, useNotification } from '..';
 
 export default {
 	title: 'Components/Notification',
@@ -24,7 +23,7 @@ export const Status_Success = () => {
 	};
 	return <button onClick={handleNewNotification}>Add Notification</button>;
 };
-export const Status_Error = () => {
+export const StatusError = () => {
 	const dispatch = useNotification();
 	const handleNewNotification = () => {
 		dispatch({
@@ -35,7 +34,7 @@ export const Status_Error = () => {
 	};
 	return <button onClick={handleNewNotification}>Add Notification</button>;
 };
-export const Status_Warning = () => {
+export const StatusWarning = () => {
 	const dispatch = useNotification();
 	const handleNewNotification = () => {
 		dispatch({
@@ -44,9 +43,13 @@ export const Status_Warning = () => {
 			title: 'Successful Request',
 		});
 	};
-	return <button onClick={handleNewNotification}>Add Notification</button>;
+	return (
+		<button type="button" onClick={handleNewNotification}>
+			Add Notification
+		</button>
+	);
 };
-export const Status_Info = () => {
+export const StatusInfo = () => {
 	const dispatch = useNotification();
 	const handleNewNotification = () => {
 		dispatch({
@@ -55,5 +58,9 @@ export const Status_Info = () => {
 			title: 'Successful Request',
 		});
 	};
-	return <button onClick={handleNewNotification}>Add Notification</button>;
+	return (
+		<button type="button" onClick={handleNewNotification}>
+			Add Notification
+		</button>
+	);
 };

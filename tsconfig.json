@@ -1,24 +1,23 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "esnext",
-    "jsx": "react-jsx",
-    "sourceMap": true,
-    "baseUrl": "/",
-    "outDir": "dist",
-    "paths": {
-      "@/*": ["src/*"],
-    },
-    "strict": true,
-    "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "declarationDir": "types",
-    "emitDeclarationOnly": true,
-    "typeRoots": ["./node_modules/@types", "./declaration.d.ts"],
-    "lib": [ "DOM", "ES2015.Core", "DOM.Iterable", "ES2015.Collection", "ES2015.Iterable", "ES2015" ]
-  }
+	"compilerOptions": {
+		"target": "es5",
+		"module": "esnext",
+		"jsx": "react-jsx",
+		"sourceMap": true,
+		"baseUrl": "/",
+		"outDir": "dist",
+		"paths": {
+			"@/*": ["src/*"]
+		},
+		"strict": true,
+		"moduleResolution": "node",
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"declarationDir": "types",
+		"typeRoots": ["./node_modules/@types", "./declaration.d.ts"],
+		"lib": ["DOM", "ES2015.Core", "DOM.Iterable", "ES2015.Collection", "ES2015.Iterable", "ES2015"]
+	}
 }

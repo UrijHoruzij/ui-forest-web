@@ -1,3 +1,4 @@
 import { FC } from 'react';
-declare const InputContainer: FC;
+import { InputProps } from './Input.types';
+declare const InputContainer: FC<InputProps>;
 export default InputContainer;

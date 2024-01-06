@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { ColumnProps } from './Grid.types';
 import styles from './Grid.module.css';
 
+const colMap = {};
 const changeCol = (col: number | undefined) => {
 	switch (col) {
 		case 1:
@@ -29,7 +30,6 @@ const changeCol = (col: number | undefined) => {
 		case 12:
 			return styles.col_12;
 		default:
-			return;
 	}
 };
 const changeSm = (sm: number | undefined) => {
@@ -59,7 +59,6 @@ const changeSm = (sm: number | undefined) => {
 		case 12:
 			return styles.col_sm_12;
 		default:
-			return;
 	}
 };
 const changeMd = (md: number | undefined) => {
@@ -89,7 +88,6 @@ const changeMd = (md: number | undefined) => {
 		case 12:
 			return styles.col_md_12;
 		default:
-			return;
 	}
 };
 const changeLg = (lg: number | undefined) => {
@@ -119,7 +117,6 @@ const changeLg = (lg: number | undefined) => {
 		case 12:
 			return styles.col_lg_12;
 		default:
-			return;
 	}
 };
 const changeXl = (xl: number | undefined) => {
@@ -149,7 +146,6 @@ const changeXl = (xl: number | undefined) => {
 		case 12:
 			return styles.col_xl_12;
 		default:
-			return;
 	}
 };
 const changeXxl = (xxl: number | undefined) => {
@@ -179,7 +175,6 @@ const changeXxl = (xxl: number | undefined) => {
 		case 12:
 			return styles.col_xxl_12;
 		default:
-			return;
 	}
 };
 const Column: FC<ColumnProps> = (props) => {

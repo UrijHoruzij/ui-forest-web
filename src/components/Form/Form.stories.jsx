@@ -1,5 +1,4 @@
-import React from 'react';
-import { Form, useForm, Input } from '../';
+import { Form, useForm, Input } from '..';
 
 export default {
 	title: 'Components/Form',
@@ -7,7 +6,7 @@ export default {
 };
 
 const validateInfo = (values) => {
-	let errors = {};
+	const errors = {};
 
 	if (!values.login.trim()) {
 		errors.login = 'Login required';

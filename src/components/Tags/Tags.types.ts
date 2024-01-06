@@ -8,7 +8,7 @@ export interface TagProps {
 	className?: string;
 	children?: ReactNode;
 	activ?: boolean;
-	onClick?: Function;
+	onClick?: (e?: any) => void;
 }
 
 export interface TagsComposition {

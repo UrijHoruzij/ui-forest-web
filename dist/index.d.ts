@@ -1,4 +1,4 @@
-import { ReactNode, CSSProperties, FC, FormEvent } from 'react';
+import { ReactNode, CSSProperties, FC, FormEvent, Component, MouseEventHandler, ChangeEventHandler, KeyboardEvent } from 'react';
 
 interface ButtonProps {
     as?: string;
@@ -20,7 +20,7 @@ interface PaginationProps {
     className?: string;
     style?: CSSProperties;
     arrowShow?: boolean;
-    onPageChange: Function;
+    onPageChange: (e: any) => void;
     totalCount: number;
     siblingCount: number;
     currentPage: number;
@@ -49,7 +49,7 @@ declare const ZoomImage: FC<ZoomImageProps>;
 
 interface SliderBeforeAfterProps {
     size: number;
-    aspectRatio: string;
+    aspectRatio?: string;
     urlFirstImage?: string;
     urlSecondImage?: string;
     alt?: string;
@@ -61,7 +61,7 @@ declare const SliderBeforeAfter: FC<SliderBeforeAfterProps>;
 
 interface TypographyProps {
     type: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'caption' | 'text';
-    color: 'accent' | 'text' | 'secondary';
+    color?: 'accent' | 'text' | 'secondary';
     children?: ReactNode;
     fontStyle?: 'normal' | 'italic' | 'oblique';
     transform?: 'capitalize' | 'lowercase' | 'uppercase';
@@ -72,16 +72,9 @@ interface TypographyProps {
 
 declare const Typography: FC<TypographyProps>;
 
-interface NotificationProps {
-    className?: string;
-    style?: CSSProperties;
-    type: 'SUCCESS' | 'ERROR' | 'WARNING' | 'INFO';
-}
 interface NotificationProviderProps {
     children?: ReactNode;
 }
-
-declare const Notification: FC<NotificationProps>;
 
 declare const NotificationProvider: FC<NotificationProviderProps>;
 
@@ -120,6 +113,74 @@ interface ImageProps {
 
 declare const Image: FC<ImageProps>;
 
+interface AvatarProps {
+    component?: Component;
+    fullname?: string;
+    avatar?: string;
+    size: 'small' | 'medium' | 'large';
+    className?: string;
+    style?: CSSProperties;
+    imageClassName?: string;
+    imageStyle?: CSSProperties;
+    isOnline?: boolean;
+}
+interface AvatarComposition {
+    Group: FC<GroupProps>;
+}
+interface GroupProps {
+    users: AvatarProps[];
+    add: boolean;
+    onAdd: MouseEventHandler<HTMLDivElement>;
+}
+
+declare const Avatar: FC<AvatarProps> & AvatarComposition;
+
+interface InputProps {
+    id?: string;
+    value: any;
+    placeholder?: string;
+    type: 'email' | 'password' | 'tel' | 'text' | 'url';
+    name?: string;
+    help?: string;
+    className?: string;
+    size: 'small' | 'medium' | 'large';
+    status: 'error' | 'success' | 'default';
+    style?: CSSProperties;
+    onChange?: ChangeEventHandler;
+    visibleTitle?: boolean;
+    disabled?: boolean;
+    onPressEnter?: KeyboardEvent;
+}
+interface InputComposition {
+    Textarea: FC<InputProps>;
+    Password: FC<InputProps>;
+}
+
+declare const Input: FC<InputProps> & InputComposition;
+
+interface TagsProps {
+    children?: ReactNode;
+}
+interface TagProps {
+    className?: string;
+    children?: ReactNode;
+    activ?: boolean;
+    onClick?: (e?: any) => void;
+}
+interface TagsComposition {
+    Tag: FC<TagProps>;
+}
+
+declare const Tags: FC<TagsProps> & TagsComposition;
+
+interface ThemeProps {
+    theme: string;
+    themes?: Record<string, string>;
+    children?: ReactNode;
+}
+
+declare const ThemeProvider: FC<ThemeProps>;
+
 declare const useEventListener: (eventName: any, handler: any, element?: any) => void;
 
 declare const useForm: (state: any, validate: any, callback: any) => {
@@ -131,4 +192,4 @@ declare const useForm: (state: any, validate: any, callback: any) => {
 
 declare const useNotification: () => (props: any) => void;
 
-export { Button, Form, Grid, Image, Notification, NotificationProvider, Pagination, SliderBeforeAfter, Typography, ZoomImage, useEventListener, useForm, useNotification };
+export { Avatar, Button, Form, Grid, Image, Input, NotificationProvider, Pagination, SliderBeforeAfter, Tags, ThemeProvider, Typography, ZoomImage, useEventListener, useForm, useNotification };

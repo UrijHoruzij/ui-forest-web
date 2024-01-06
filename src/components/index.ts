@@ -4,7 +4,7 @@ export { default as Form } from './Form';
 export { default as ZoomImage } from './ZoomImage';
 export { default as SliderBeforeAfter } from './SliderBeforeAfter';
 export { default as Typography } from './Typography';
-export { default as Notification } from './Notification/notification';
+// export { default as Notification } from './Notification/notification';
 export { default as NotificationProvider } from './Notification';
 export { default as Grid } from './Grid';
 export { default as Image } from './Image';
@@ -12,7 +12,6 @@ export { default as Avatar } from './Avatar';
 export { default as Input } from './Input';
 export { default as Tags } from './Tags';
 export { default as ThemeProvider } from './ThemeProvider';
-export { default as ThemeContext } from './ThemeProvider/context';
 
 export { default as useEventListener } from './ZoomImage/useEventListener';
 export { default as useForm } from './Form/useForm';
