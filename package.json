@@ -6,6 +6,9 @@
 	"module": "dist/esm/index.js",
 	"types": "dist/index.d.ts",
 	"type": "module",
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build": "rollup -c",
 		"lint": "eslint src/**/* --ext .ts,.tsx ",
