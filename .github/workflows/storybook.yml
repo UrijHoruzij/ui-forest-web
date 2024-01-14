@@ -22,29 +22,29 @@ jobs:
   #       run: npx install
   #     - name: Test
   #       run: npm run test
-  doc:
-    name: Storybook
-    runs-on: ubuntu-latest
-    needs: [release]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-      - name: Install dependencies
-        run: yarn install
-      - name: Build Storybook
-        run: npm run build-storybook
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.6.2
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: main # The branch the action should deploy to.
-          FOLDER: docs-build # The folder that the build-storybook script generates files.
-          CLEAN: true # Automatically remove deleted files from the deploy branch
-          TARGET_FOLDER: docs # The folder that we serve our Storybook files from
+  # doc:
+  #   name: Storybook
+  #   runs-on: ubuntu-latest
+  #   needs: [release]
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v3
+  #     - name: Setup Node.js
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         node-version: 18.x
+  #     - name: Install dependencies
+  #       run: yarn install
+  #     - name: Build Storybook
+  #       run: npm run build-storybook
+  #     - name: Deploy
+  #       uses: JamesIves/github-pages-deploy-action@3.6.2
+  #       with:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #         BRANCH: main # The branch the action should deploy to.
+  #         FOLDER: docs-build # The folder that the build-storybook script generates files.
+  #         CLEAN: true # Automatically remove deleted files from the deploy branch
+  #         TARGET_FOLDER: docs # The folder that we serve our Storybook files from
   release:
     name: Release
     runs-on: ubuntu-latest
@@ -54,7 +54,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18.x
+          node-version: latest
       - name: Install dependencies
         run: yarn install
       - name: Install semantic-release extra plugins
