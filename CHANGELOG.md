@@ -1,3 +1,10 @@
+## [1.12.5](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.12.4...v1.12.5) (2024-1-14)
+
+
+### Bug Fixes
+
+* fixed gh actions ([21c1435](https://github.com/UrijHoruzij/ui-forest-web/commit/21c14359c944e719cce04e6665f3c1406bbfbfb4))
+
 ## [1.12.4](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.12.3...v1.12.4) (2024-01-06)
 
 

@@ -1,0 +1,2 @@
+import{jsx as r}from"react/jsx-runtime";var t=function(){return t=Object.assign||function(r){for(var t,n=1,e=arguments.length;n<e;n++)for(var o in t=arguments[n])Object.prototype.hasOwnProperty.call(t,o)&&(r[o]=t[o]);return r},t.apply(this,arguments)};"function"==typeof SuppressedError&&SuppressedError;var n=function(n){var e=n.children,o=n.onSubmit;return r("form",t({},n,{onSubmit:o,noValidate:!0,children:e}))};export{n as Form,n as default};
+//# sourceMappingURL=index.js.map
