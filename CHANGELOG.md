@@ -1,3 +1,34 @@
+## [1.12.4](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.12.3...v1.12.4) (2024-01-06)
+
+
+### Bug Fixes
+
+* fixed module ([a68bd06](https://github.com/UrijHoruzij/ui-forest-web/commit/a68bd06c6eb0f074575a67aa3d0195d762eb606c))
+
+## [1.12.3](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.12.2...v1.12.3) (2024-01-06)
+
+
+### Bug Fixes
+
+* fixed package.json ([eca76ee](https://github.com/UrijHoruzij/ui-forest-web/commit/eca76ee44f4fd341bdb90e42bd7014042d8f1a86))
+* fixed package.json ([ffc45bf](https://github.com/UrijHoruzij/ui-forest-web/commit/ffc45bf744e6fc702c82719eaa5b8477662d5c47))
+
+## [1.12.2](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.12.1...v1.12.2) (2024-01-06)
+
+
+### Bug Fixes
+
+* fixed package.json ([14a9a51](https://github.com/UrijHoruzij/ui-forest-web/commit/14a9a5105b05a1ff5923d24419e4b360439a21fb))
+* merge ([01a69f2](https://github.com/UrijHoruzij/ui-forest-web/commit/01a69f29392c967b983338edabd2bffad5659008))
+
+## [1.12.1](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.12.0...v1.12.1) (2024-01-02)
+
+
+### Bug Fixes
+
+* fixed ([74124e3](https://github.com/UrijHoruzij/ui-forest-web/commit/74124e362ba42977b53926724d3319f39df8f4e7))
+* fixed eslint, storybook ([c2099b1](https://github.com/UrijHoruzij/ui-forest-web/commit/c2099b1e12ba27d3d91006d28a70c4733cea51f4))
+
 # [1.12.0](https://github.com/UrijHoruzij/ui-forest-web/compare/v1.11.6...v1.12.0) (2024-01-01)
 
 
