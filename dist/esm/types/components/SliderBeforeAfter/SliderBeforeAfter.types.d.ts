@@ -1,7 +1,7 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 export interface SliderBeforeAfterProps {
     size: number;
-    aspectRatio: string;
+    aspectRatio?: string;
     urlFirstImage?: string;
     urlSecondImage?: string;
     alt?: string;

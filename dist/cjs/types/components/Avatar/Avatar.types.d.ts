@@ -1,6 +1,6 @@
-import { FC, CSSProperties, ReactNode, MouseEventHandler, Component } from 'react';
+import { FC, CSSProperties, MouseEventHandler, Component } from 'react';
 export interface AvatarProps {
-    component?: Component | ReactNode;
+    component?: Component;
     fullname?: string;
     avatar?: string;
     size: 'small' | 'medium' | 'large';
